@@ -3,6 +3,7 @@ import { stats } from "@/constants";
 import Aos from "aos";
 import { Noto_Serif } from "next/font/google";
 import React, { useEffect } from "react";
+import { NumberTicker } from "./magicui/number-ticker";
 
 const font = Noto_Serif({
   subsets: ["latin"],
@@ -30,7 +31,7 @@ const Stats = () => {
             stats.map((stat, index) => (
                 <div className="flex flex-col items-center gap-6">
                     <div className={`rounded-lg p-10 bg-[#BED9F336] flex justify-center items-center text-center text-3xl size-[10rem] ${font.className}`}>
-                        {stat.value}
+                        <NumberTicker value={stat.value}/>%
                     </div>
                     <p className="md:w-[12rem] w-[10rem] font-light md:text-lg text-sm">{stat.name}</p>
                 </div>
