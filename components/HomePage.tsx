@@ -38,7 +38,7 @@ const HomePage = () => {
         <Image
           src="/quiz-vector.png"
           alt="quiz vector"
-          className="object-contain left-70 bottom-50 relative"
+          className="object-contain left-60 bottom-45 relative"
           width={140}
           height={140}
         />
