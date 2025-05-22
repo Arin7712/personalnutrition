@@ -1,0 +1,44 @@
+"use client";
+import { stats } from "@/constants";
+import Aos from "aos";
+import { Noto_Serif } from "next/font/google";
+import React, { useEffect } from "react";
+
+const font = Noto_Serif({
+  subsets: ["latin"],
+  weight: ["100", "200", "300"],
+  display: "swap",
+});
+
+const Stats = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 700,
+      easing: "ease-out-cubic",
+    });
+  }, []);
+
+  return (
+    <div className="flex flex-col md:gap-[6rem] gap-[2rem] items-center justify-center text-center w-full">
+      <h1 data-aos="fade-up" className={`w-[50%] md:text-5xl text-4xl text-center ${font.className}`}>
+        Researched. Studied.
+        <br /> <span className="text-highlight">Continuously Improved</span>
+      </h1>
+
+      <div className="grid md:grid-cols-4 grid-cols-2 place-items-start gap-10 md:gap-40">
+        {
+            stats.map((stat, index) => (
+                <div className="flex flex-col items-center gap-6">
+                    <div className={`rounded-lg p-10 bg-[#BED9F336] flex justify-center items-center text-center text-3xl size-[10rem] ${font.className}`}>
+                        {stat.value}
+                    </div>
+                    <p className="w-[12rem] font-light md:text-lg text-sm">{stat.name}</p>
+                </div>
+            ))
+        }
+      </div>
+    </div>
+  );
+};
+
+export default Stats;
