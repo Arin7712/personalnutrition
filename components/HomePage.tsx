@@ -19,7 +19,7 @@ const HomePage = () => {
       <Image
         src="/homebg.png"
         alt="homebg"
-        className="w-full h-[80vh] object-cover z-0 md:hidden block relative"
+        className="w-full object-cover z-0 md:hidden block relative mt-10"
         width={400}
         height={400}
       />
@@ -34,11 +34,11 @@ const HomePage = () => {
           height={150}
         />
       </div>
-      <div className="z-50 md:hidden block ">
+      <div className="z-50 md:hidden block">
         <Image
           src="/quiz-vector.png"
           alt="quiz vector"
-          className="object-contain left-80 bottom-50 relative"
+          className="object-contain left-70 bottom-50 relative"
           width={140}
           height={140}
         />

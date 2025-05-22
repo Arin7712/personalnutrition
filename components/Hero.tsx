@@ -27,11 +27,11 @@ useEffect(() => {
     });
   }, []);
     return (
-    <div className='flex flex-col gap-6 items-start justify-center md:w-[50%] h-[80vh] md:px-[4rem] px-6'>
-      <h1 data-aos="fade-up" className={`${font.className} md:text-6xl text-5xl`}>Interpret Your Gut To <span className='text-highlight'>Interpret</span> Your Health</h1>
-      <p data-aos="fade-up" data-aos-delay="200" className='text-sm w-[85%]'>Your gut holds the key to your health. Through tongue analysis and dosha reading, we design a personalized food intelligence report suited to your unique nutrition needs, for optimal gut health.</p>
-         <div data-aos="fade-up" data-aos-delay="400">
-        <Button className='gradient-green-1 text-black text-xs rounded-full px-10 py-6 hover:cursor-pointer uppercase'>Get your personalized food guide</Button>
+    <div className='flex flex-col gap-6 md:items-start items-center md:text-start text-center justify-start md:pt-0 pt-[4rem] md:w-[50%] md:h-[80vh] md:px-[4rem] px-6'>
+      <h1 data-aos="fade-up" className={`${font.className} md:text-6xl sm:text-5xl text-3xl`}>Interpret Your Gut To <span className='text-highlight'>Interpret</span> Your Health</h1>
+      <p data-aos="fade-up" data-aos-delay="200" className='text-sm sm:w-[85%] w-[90%]'>Your gut holds the key to your health. Through tongue analysis and dosha reading, we design a personalized food intelligence report suited to your unique nutrition needs, for optimal gut health.</p>
+         <div data-aos="fade-up" data-aos-delay="400" className='md:block flex w-full'>
+        <Button className='gradient-green-1 text-black text-xs rounded-full px-10 py-6 hover:cursor-pointer uppercase md:w-auto w-full'>Get your personalized food guide</Button>
       </div>
       <Link href='/' className='flex items-center gap-4 text-xs underline' data-aos="fade-up" data-aos-delay="600">What is a food sensitivity?
       <CircleArrowRight className='size-3'/>
