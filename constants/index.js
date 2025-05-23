@@ -39,3 +39,24 @@ export const stats = [
         value: 90,
     },
 ]
+
+export const testimonials = [
+    {
+        image: '/t1.png',
+        name: 'Sweta, XX',
+        title: 'Maternity Health and Weight Loss Goals',
+        text: 'I was really intrigued by their claim that food alone could cure many lifestyle diseases without relying on medication. With PNUT\'s diet plan, my HbA1c levels have dropped significantly. I\'ve already started shedding some pounds. And it actually showed me that to be healthy is not expensive, stressful or complicated.',
+    },
+        {
+        image: '/t2.png',
+        name: 'Sagar, XXXX',
+        title: 'Weight Loss Goals',
+        text: 'All I had to do was take a quick picture of my tongue, answer a few questions and PNut sent me a food report. The report was incredibly detailed, like, it gave me my gut score, recommended foods, meal plans, meal times, sleep tips, even the best exercise for my body type.',
+    },
+        {
+        image: '/t1.png',
+        name: 'Sweta, XX',
+        title: 'Maternity Health and Weight Loss Goals',
+        text: 'I was really intrigued by their claim that food alone could cure many lifestyle diseases without relying on medication. With PNUT\'s diet plan, my HbA1c levels have dropped significantly. I\'ve already started shedding some pounds. And it actually showed me that to be healthy is not expensive, stressful or complicated.',
+    },
+]
