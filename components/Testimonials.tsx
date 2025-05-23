@@ -1,4 +1,3 @@
-import { Star } from "lucide-react";
 import { Noto_Serif } from "next/font/google";
 import Image from "next/image";
 import React from "react";

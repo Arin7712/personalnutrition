@@ -29,7 +29,7 @@ const Stats = () => {
       <div className="grid md:grid-cols-4 grid-cols-2 place-items-start gap-4 md:gap-40">
         {
             stats.map((stat, index) => (
-                <div className="flex flex-col items-center gap-6">
+                <div key={index} className="flex flex-col items-center gap-6">
                     <div className={`rounded-lg p-10 bg-[#BED9F336] flex justify-center items-center text-center text-3xl size-[10rem] ${font.className}`}>
                         <NumberTicker value={stat.value}/>%
                     </div>
