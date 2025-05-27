@@ -60,3 +60,17 @@ export const testimonials = [
         text: 'I was really intrigued by their claim that food alone could cure many lifestyle diseases without relying on medication. With PNUT\'s diet plan, my HbA1c levels have dropped significantly. I\'ve already started shedding some pounds. And it actually showed me that to be healthy is not expensive, stressful or complicated.',
     },
 ]
+
+export const products = [
+    {
+        image: '/product1.png',
+        name: 'Personalized Food Report',
+        price: 0,
+    },
+    {
+        image: '/product2.png',
+        name: '90-Day Gut Reset Program',
+        price: 0,
+    },
+    
+]

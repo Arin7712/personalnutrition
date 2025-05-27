@@ -1,5 +1,9 @@
 import About from "@/components/About";
+import { FeatureSteps } from "@/components/feature-section";
+import { FeatureStepsDemo } from "@/components/FeatureStepsDemo";
 import HomePage from "@/components/HomePage";
+import Products from "@/components/Products";
+import Quiz from "@/components/Quiz";
 import Stats from "@/components/Stats";
 import Testimonials from "@/components/Testimonials";
 import Testimonials2 from "@/components/Testimonials2";
@@ -12,6 +16,9 @@ export default function Home() {
       <Testimonials/>
       <About/>
       <Testimonials2/>
+      <FeatureStepsDemo/>
+      <Products/>
+      <Quiz/>
     </div>
   );
 }
