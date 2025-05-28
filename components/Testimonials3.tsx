@@ -16,7 +16,7 @@ const Testimonials3 = () => {
         <div className="flex flex-col md:gap-[4rem] gap-10 md:w-[70%]">
           <div className="space-y-4">
             <h1
-              className={`md:text-5xl text-3xl ${font.className} md:block hidden`}
+              className={`md:text-5xl text-3xl ${font.className}`}
             >
               Sun Seekers
             </h1>

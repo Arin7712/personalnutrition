@@ -65,7 +65,7 @@ const Faq3 = ({ items = faqItems }: Faq3Props) => {
   const rightItems = items.slice(Math.ceil(items.length / 2));
 
   return (
-    <section className="pt-[4rem]">
+    <section className="pt-[4rem] md:px-0 ">
       <div className="container">
         <div className="flex flex-col lg:flex-row gap-10">
           {/* Left column */}
@@ -75,7 +75,7 @@ const Faq3 = ({ items = faqItems }: Faq3Props) => {
             className="w-full lg:w-1/2 space-y-4"
           >
             {leftItems.map((item) => (
-              <AccordionItem key={item.id} value={item.id} className="w-md">
+              <AccordionItem key={item.id} value={item.id} className="md:w-md">
                 <AccordionTrigger className="hover:no-underline hover:opacity-60">
                   <div className="font-medium lg:text-lg text-neutral-600">{item.question}</div>
                 </AccordionTrigger>
@@ -95,7 +95,7 @@ const Faq3 = ({ items = faqItems }: Faq3Props) => {
             className="w-full lg:w-1/2 space-y-4"
           >
             {rightItems.map((item) => (
-              <AccordionItem key={item.id} value={item.id} className="w-md">
+              <AccordionItem key={item.id} value={item.id} className="md:w-md">
                 <AccordionTrigger className="hover:no-underline hover:opacity-60">
                   <div className="font-medium lg:text-lg text-neutral-600">{item.question}</div>
                 </AccordionTrigger>
