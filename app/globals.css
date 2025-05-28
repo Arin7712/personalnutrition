@@ -163,4 +163,13 @@
   .text-highlight {
     @apply text-[#5BA228] italic
   }
+
+  .scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 }

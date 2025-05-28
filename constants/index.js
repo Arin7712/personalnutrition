@@ -74,3 +74,26 @@ export const products = [
     },
     
 ]
+
+export const steps = [
+    {
+        image: '/step1.png',
+        title: 'Tell us your health goals and food preferences',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend venenatis est, eu blandit augue ultricies in.'
+    },
+        {
+        image: '/step2.png',
+        title: 'Understand body chemistry via tongue scan',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend venenatis est, eu blandit augue ultricies in.'
+    },
+        {
+        image: '/step3.png',
+        title: 'TEach form is carefully analyzed by a certified Ayurveda doctor',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend venenatis est, eu blandit augue ultricies in.'
+    },
+        {
+        image: '/step1.png',
+        title: 'Tell us your health goals and food preferences',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend venenatis est, eu blandit augue ultricies in.'
+    },
+]

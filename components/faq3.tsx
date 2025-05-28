@@ -65,7 +65,7 @@ const Faq3 = ({ items = faqItems }: Faq3Props) => {
   const rightItems = items.slice(Math.ceil(items.length / 2));
 
   return (
-    <section className="py-[4rem]">
+    <section className="pt-[4rem]">
       <div className="container">
         <div className="flex flex-col lg:flex-row gap-10">
           {/* Left column */}
