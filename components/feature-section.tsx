@@ -51,14 +51,14 @@ export function FeatureSteps({
   }, [progress, features.length, autoPlayInterval]);
 
   return (
-    <div className={cn("py-[6rem]", className)}>
-      <div className=" mx-auto w-full">
+    <div className={cn("md:py-[6rem]", className)}>
+      <div className="mx-auto w-full">
         <div className="flex flex-col items-center md:grid md:grid-cols-2 w-full ">
-<div
-  className={cn(
-    "order-1 md:order-2 relative h-screen md:h-[110vh] overflow-hidden flex items-center justify-center"
-  )}
->
+          <div
+            className={cn(
+              "relative min-h-screen md:h-[110vh] md:overflow-hidden flex items-center justify-center md:block hidden"
+            )}
+          >
             <AnimatePresence mode="wait">
               {features.map(
                 (feature, index) =>
@@ -74,7 +74,7 @@ export function FeatureSteps({
                       <Image
                         src={feature.image}
                         alt={feature.step}
-                        className="transition-transform transform md:max-w-auto max-w-[90vw]"
+                        className="transition-transform transform md:max-w-auto w-full h-auto object-contain"
                         width={800}
                         height={800}
                       />
@@ -84,7 +84,7 @@ export function FeatureSteps({
             </AnimatePresence>
           </div>
 
-          <div className="order-2 md:order-2 w-full h-[110vh] bg-[url('/ellipse2.png')] bg-no-repeat bg-center bg-[length:800px_800px] flex flex-col items-center justify-between py-6 pr-12">
+          <div className="w-full h-[110vh] bg-[url('/ellipse2.png')] bg-no-repeat bg-center bg-[length:800px_800px] flex flex-col items-center justify-between py-6 pr-12">
             <h1 className={`md:text-4xl text-3xl ${font.className}`}>
               Our client goals
             </h1>{" "}
@@ -125,6 +125,15 @@ export function FeatureSteps({
                 iaculis libero. Integer{" "}
               </p>
             </div>
+          </div>
+          <div className="md:hidden block w-full">
+                      <Image
+                        src='/s1.png'
+                        alt='a'
+                        className="transition-transform transform md:max-w-auto w-full h-auto object-contain"
+                        width={800}
+                        height={800}
+                      />
           </div>
         </div>
       </div>
