@@ -36,16 +36,16 @@ const Steps = () => {
           </div>
           <div className="md:flex gap-4 hidden">
             <Button onClick={() => api?.scrollPrev()} className="bg-[#BED9F3]">
-              <Triangle className="size-4 -rotate-90 fill-white" />
+              <Triangle className="size-3 -rotate-90 fill-white" />
             </Button>
             <Button onClick={() => api?.scrollNext()} className="bg-[#BED9F3]">
-              <Triangle className="size-4 rotate-90 fill-white" />
+              <Triangle className="size-3 rotate-90 fill-white" />
             </Button>
           </div>
         </div>
       </div>
 
-      <div>
+      <div className="pt-[2rem]">
         <Carousel setApi={setApi}>
           <CarouselContent>
             {steps.map((item, index) => (

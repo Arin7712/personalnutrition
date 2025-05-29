@@ -11,7 +11,7 @@ const font = Noto_Serif({
 
 const Event = () => {
   return (
-    <div className="flex flex-col gap-6  items-center justify-center w-full py-[6rem] md:px-[6rem] px-6">
+    <div className="flex flex-col gap-6  items-center justify-center w-full pt-[6rem] md:px-[6rem] px-6">
       <h1
         data-aos="fade-up"
         className={`md:w-[50%] md:text-5xl text-4xl  text-center ${font.className}`}
@@ -29,13 +29,11 @@ const Event = () => {
       <Button className="rounded-full uppercase text-xs bg-white border-[1px] px-6 text-black border-black">
         See more
       </Button>
-<div
-  className="flex gap-4 md:gap-10 py-[6rem] overflow-x-auto md:overflow-x-visible scrollbar-hide md:flex-wrap"
->
-  <Image src="/event1.png" alt="c1" width={400} height={400} />
-  <Image src="/event2.png" alt="c1" width={400} height={400} />
-  <Image src="/event3.png" alt="c1" width={400} height={400} />
-</div>
+      <div className="flex gap-4 md:gap-6 py-[6rem] overflow-x-auto md:overflow-x-visible scrollbar-hide">
+        <Image src="/event1.png" alt="c1" width={400} height={400} />
+        <Image src="/event2.png" alt="c1" width={400} height={400} />
+        <Image src="/event3.png" alt="c1" width={400} height={400} />
+      </div>
     </div>
   );
 };

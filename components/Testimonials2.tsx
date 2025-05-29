@@ -71,7 +71,7 @@ const Testimonials2 = () => {
                   <h1 className={`md:text-3xl text-2xl ${font.className}`}>
                     {item.title}
                   </h1>
-                  <p className="text-xs">
+                  <p className="text-sm md:pb-[6rem]">
                     {item.text}
                   </p>
                   <p className="text-sm">-{item.name}</p>

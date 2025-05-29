@@ -97,3 +97,34 @@ export const steps = [
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend venenatis est, eu blandit augue ultricies in.'
     },
 ]
+
+export const articles = [
+    {
+        image: '/article.png',
+        title: 'Understand body chemistry via tongue scan',
+    },
+        {
+        image: '/article.png',
+        title: 'Understand body chemistry via tongue scan',
+    },
+        {
+        image: '/article.png',
+        title: 'Understand body chemistry via tongue scan',
+    },
+        {
+        image: '/article.png',
+        title: 'Understand body chemistry via tongue scan',
+    },
+        {
+        image: '/article.png',
+        title: 'Understand body chemistry via tongue scan',
+    },
+            {
+        image: '/article.png',
+        title: 'Understand body chemistry via tongue scan',
+    },
+            {
+        image: '/article.png',
+        title: 'Understand body chemistry via tongue scan',
+    },
+]

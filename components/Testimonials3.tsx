@@ -11,7 +11,7 @@ const font = Noto_Serif({
 
 const Testimonials3 = () => {
   return (
-    <div className="flex flex-col md:px-[6rem] px-6 pt-[6rem]">
+    <div className="flex flex-col md:px-[6rem] px-6 pt-[4rem]">
       <div className="flex flex-col md:flex-row justify-center">
         <div className="flex flex-col md:gap-[4rem] gap-10 md:w-[70%]">
           <div className="space-y-4">
@@ -26,13 +26,13 @@ const Testimonials3 = () => {
           </div>
 
           <div className="flex flex-wrap md:gap-10 gap-4 items-center text-sm text-zinc-600">
-            <p>Dr.Andrew Huberman</p>
+            <p className="underline">Dr.Andrew Huberman</p>
             <p>Allyson Felix</p>
             <p>Sir Lewis Hamilton</p>
             <p>Jeremy Jauncey</p>
           </div>
 
-          <div className="md:hidden block flex justify-center">
+          <div className="md:hidden  flex justify-center">
             <Image src="/video1.png" alt="video" width={400} height={400} />
           </div>
 
@@ -44,7 +44,7 @@ const Testimonials3 = () => {
             </p>
           </div>
           <div>
-            <p className="w-[60%] text-zinc-600 md:text-md text-sm">
+            <p className="w-[60%] text-zinc-600 md:text-md text-sm uppercase">
               NEUROSCIENTIST, HOST OF THE HUBERMAN LAB PODCAST, Personal
               Nutrition PARTNER
             </p>

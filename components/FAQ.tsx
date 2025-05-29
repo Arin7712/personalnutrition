@@ -77,7 +77,7 @@ const demoData = {
 
 const FAQ = () => {
   return (
-    <div className='flex flex-col gap-10 items-center justify-center md:px-0 px-6'>
+    <div className='flex flex-col gap-10 items-center justify-center md:px-0 px-6 md:pt-0 pt-[6rem]'>
             <h1
         className={`md:w-[50%] md:text-5xl text-4xl  text-center ${font.className}`}
       >

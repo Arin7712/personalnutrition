@@ -59,7 +59,7 @@ const Testimonials = () => {
           <Image src="/video1.png" alt="video" width={400} height={400} />
         </div>
       </div>
-      <div className="relative md:w-[50%] w-full aspect-[1/1] mx-auto">
+      <div className="relative md:w-[50%] w-full aspect-[1/1] md:mx-auto">
         <Image
           src="/ellipse.png"
           alt="sunseekers"
@@ -67,7 +67,7 @@ const Testimonials = () => {
           className="object-contain"
         />
         <h1
-          className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:text-4xl text-3xl z-1 ${font.className}`}
+          className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:text-4xl text-2xl z-1 ${font.className}`}
         >
           100 Reviews With An Average Rating Of 4/5 ⭐
         </h1>

@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Article from "@/components/Article";
 import Community from "@/components/Community";
 import Event from "@/components/Event";
 import Expert from "@/components/Expert";
@@ -26,13 +27,14 @@ export default function Home() {
       <Testimonials2/>
       <FeatureStepsDemo/>
       <Products/>
+      <Quiz/>
       <Expert/>
       <Steps/>
-      <Quiz/>
       <Event/>
       <Testimonials3/>
       <FAQ/>
       <Press/>
+      <Article/>
       <Community/>
       <Footer/>
     </div>

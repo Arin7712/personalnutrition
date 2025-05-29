@@ -33,7 +33,7 @@ const Stats = () => {
                     <div className={`rounded-lg p-10 bg-[#BED9F336] flex justify-center items-center text-center text-3xl size-[10rem] ${font.className}`}>
                         <NumberTicker value={stat.value}/>%
                     </div>
-                    <p className="md:w-[12rem] w-[10rem] font-light md:text-lg text-sm">{stat.name}</p>
+                    <p className="md:w-[12rem] w-[10rem] font-light md:text-lg text-sm text-neutral-700">{stat.name}</p>
                 </div>
             ))
         }
