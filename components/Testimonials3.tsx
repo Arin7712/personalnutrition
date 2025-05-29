@@ -11,7 +11,7 @@ const font = Noto_Serif({
 
 const Testimonials3 = () => {
   return (
-    <div className="flex flex-col md:px-[6rem] px-6 pt-[4rem]">
+    <div className="flex flex-col md:px-[6rem] px-6">
       <div className="flex flex-col md:flex-row justify-center">
         <div className="flex flex-col md:gap-[4rem] gap-10 md:w-[70%]">
           <div className="space-y-4">

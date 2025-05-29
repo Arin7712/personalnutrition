@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='h-[90vh] bg-[url(/footer.png)] bg-cover bg-center bg-no-repeat flex flex-col justify-between py-[6rem] items-center'>
+    <div className='md:h-[90vh] bg-[url(/footer.png)] bg-cover bg-center bg-no-repeat flex flex-col justify-between py-[6rem] items-center'>
       <div className='flex flex-col w-[100%] md:justify-center md:items-center px-6 md:px-[4rem]'>
         <Image src="/logo.png" alt="logo" width={140} height={200} />
         <div className='flex md:flex-row flex-col py-[4rem] md:justify-between md:gap-0 gap-10 md:items-center md:w-[60%]'>
@@ -23,14 +23,17 @@ const Footer = () => {
       </div>
 
       <div className='flex md:flex-row flex-col justify-between px-6 md:px-[6rem] w-full text-xs'>
-        <div>
+        <div className='md:block hidden'>
             <p>© All rights reserved</p>
         </div>
-        <div className='flex gap-4 text-xs uppercase'>
+        <div className='flex md:pt-0 pt-6 md:gap-4 gap-12 justify-center md:justify-start text-xs'>
             <p>Privacy Policy</p>
             <p>Terms of Use</p>
             <p>FAQs</p>
             <p>Cancellation Policy</p>
+        </div>
+          <div className='md:hidden flex w-full items-center justify-center pt-6 '>
+            <p>© All rights reserved</p>
         </div>
       </div>
     </div>

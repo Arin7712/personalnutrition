@@ -11,7 +11,7 @@ const font = Noto_Serif({
 
 const Expert = () => {
   return (
-    <div className="flex flex-col gap-6 items-center justify-center w-full md:px-[6rem] px-6">
+    <div className="flex flex-col gap-6 items-center justify-center w-full md:px-[6rem] px-6 pt-[6rem]">
       <h1
         data-aos="fade-up"
         className={`md:w-[50%] md:text-5xl text-4xl  text-center ${font.className}`}
@@ -27,7 +27,7 @@ const Expert = () => {
         </div>
 
         <div>
-            <div className="flex flex-col md:flex-row py-[6rem]">
+            <div className="flex flex-col md:flex-row md:py-[6rem] py-[4rem]">
                     <div className="flex flex-col md:gap-[4rem] gap-10 md:w-[50%]">
                       <div className="space-y-4">
                         <h1
@@ -57,7 +57,7 @@ const Expert = () => {
                       </div>
                     </div>
             
-                    <div className="flex md:w-[50%]  justify-center items-center">
+                    <div className="flex md:w-[50%]  justify-center items-center md:pt-0 pt-[4rem]">
                       <Image src="/mock5.png" alt="video" width={500} height={400} />
                     </div>
                   </div>

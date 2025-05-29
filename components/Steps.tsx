@@ -50,10 +50,10 @@ const Steps = () => {
           <CarouselContent>
             {steps.map((item, index) => (
               <CarouselItem
-                className="w-full md:basis-1/3 basis-1/1"
+                className="w-full md:basis-1/3 basis-1/1 px-0"
                 key={index}
               >
-                <div className="flex md:flex-row flex-col gap-6 text-start items-center">
+                <div className="flex md:flex-row flex-col md:gap-6 text-start items-center">
                   <div className="flex flex-col w-[90%] gap-4">
                     <div className="rounded-md">
                       <Image

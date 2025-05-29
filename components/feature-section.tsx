@@ -56,7 +56,7 @@ export function FeatureSteps({
         <div className="flex flex-col items-center md:grid md:grid-cols-2 w-full ">
           <div
             className={cn(
-              "relative min-h-screen md:h-[110vh] md:overflow-hidden flex items-center justify-center md:block hidden"
+              "relative min-h-screen md:h-[110vh] md:overflow-hidden  items-center justify-center md:flex hidden"
             )}
           >
             <AnimatePresence mode="wait">
