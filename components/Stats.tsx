@@ -26,14 +26,14 @@ const Stats = () => {
         <br /> <span className="text-highlight">Continuously Improved</span>
       </h1>
 
-      <div className="grid md:grid-cols-4 grid-cols-2 place-items-start gap-4 md:gap-40">
+      <div className="grid md:grid-cols-4 grid-cols-2 place-items-start gap-4 md:gap-30">
         {
             stats.map((stat, index) => (
                 <div key={index} className="flex flex-col items-center gap-6">
-                    <div className={`rounded-lg p-10 bg-[#BED9F336] flex justify-center items-center text-center text-3xl size-[10rem] ${font.className}`}>
+                    <div className={`rounded-lg p-10 bg-[#BED9F336] flex justify-center items-center text-center text-5xl size-[10rem] ${font.className}`}>
                         <NumberTicker value={stat.value}/>%
                     </div>
-                    <p className="md:w-[12rem] w-[10rem] font-light md:text-lg text-sm text-neutral-700">{stat.name}</p>
+                    <p className="md:w-[12rem] w-[10rem] font-light md:text-2xl text-sm text-[#022425]">{stat.name}</p>
                 </div>
             ))
         }

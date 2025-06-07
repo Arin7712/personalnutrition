@@ -31,7 +31,7 @@ useEffect(() => {
       <h1 data-aos="fade-up" className={`${font.className} md:text-6xl sm:text-5xl text-3xl`}>Interpret Your Gut To <span className='text-highlight'>Interpret</span> Your Health</h1>
       <p data-aos="fade-up" data-aos-delay="200" className='text-sm sm:w-[85%] w-[90%]'>Your gut holds the key to your health. Through tongue analysis and dosha reading, we design a personalized food intelligence report suited to your unique nutrition needs, for optimal gut health.</p>
          <div data-aos="fade-up" data-aos-delay="400" className='md:block flex w-full'>
-        <Button className='gradient-green-1 text-black text-xs rounded-full px-10 py-6 hover:cursor-pointer uppercase md:w-auto w-full'>Get your personalized food guide</Button>
+        <Button className='gradient-green-1 text-xs rounded-full px-10 py-6 hover:cursor-pointer uppercase md:w-auto w-full'>Get your personalized food guide</Button>
       </div>
       <Link href='/' className='flex items-center gap-4 text-xs underline' data-aos="fade-up" data-aos-delay="600">What is a food sensitivity?
       <CircleArrowRight className='size-3'/>

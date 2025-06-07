@@ -51,15 +51,15 @@ const Testimonials2 = () => {
             </p>
           </div>
           <div className="md:flex gap-4 hidden">
-          <Button onClick={() => api?.scrollPrev()} className="bg-[#BED9F3]"><Triangle className="size-4 -rotate-90 fill-white"/></Button>
-          <Button onClick={() => api?.scrollNext()} className="bg-[#BED9F3]"><Triangle className="size-4 rotate-90 fill-white"/></Button>
+          <Button onClick={() => api?.scrollPrev()} className="bg-[#BED9F3] rounded-none"><Triangle className="size-4 -rotate-90 fill-white"/></Button>
+          <Button onClick={() => api?.scrollNext()} className="bg-[#BED9F3] rounded-none"><Triangle className="size-4 rotate-90 fill-white"/></Button>
           </div>
         </div>
       </div>
 
       <div className="pt-[4rem]">
         <Carousel setApi={setApi}>
-          <CarouselContent>
+          <CarouselContent className="gap-10">
             {
               testimonials.map((item, index) => (
             <CarouselItem className="w-full md:basis-1/2 basis-1/1" key={index}>
@@ -71,7 +71,7 @@ const Testimonials2 = () => {
                   <h1 className={`md:text-3xl text-2xl ${font.className}`}>
                     {item.title}
                   </h1>
-                  <p className="text-sm md:pb-[6rem]">
+                  <p className="text-sm md:pb-[6rem] leading-relaxed">
                     {item.text}
                   </p>
                   <p className="text-sm">-{item.name}</p>

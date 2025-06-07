@@ -51,7 +51,7 @@ const Expert = () => {
                         </p>
                       </div>
                       <div>
-                        <p className="w-[60%] text-zinc-600 md:text-md text-sm underline">
+                        <p className="w-[60%] md:text-md text-sm underline">
                           Read our public research
                         </p>
                       </div>

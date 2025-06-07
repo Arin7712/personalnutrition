@@ -26,12 +26,12 @@ import {
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between md:px-[6rem] px-6 pt-6">
+    <div className="flex items-center justify-between md:px-[6rem] px-6 pt-10">
       <div className="md:order-[-1] order-1">
         <Image src="/logo.png" alt="logo" width={100} height={100} />
       </div>
       <div className="md:block hidden">
-        <ul className="flex gap-[4rem] items-center">
+        <ul className="flex gap-[3rem] items-center">
           {navItems.map((item, index) => (
             <li key={index} className="hover:cursor-pointer">
               {item.name === "Products" ? (
@@ -55,7 +55,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="md:block hidden">
-        <Button className="gradient-green-1 text-black text-sm rounded-full px-6 hover:cursor-pointer">
+        <Button className="gradient-green-1 text-sm rounded-full px-6 hover:cursor-pointer">
           Start the Quiz
         </Button>
       </div>

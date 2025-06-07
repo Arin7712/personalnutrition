@@ -49,7 +49,7 @@ const Products = () => {
             are here to empower you with tools that will heal, nourish, restore,
             balance, energize, and rejuvenate you. 
           </p>
-          <Button className="bg-[#CAF948] rounded-full text-black uppercase text-xs md:w-full w-fit">
+          <Button className="bg-[#CAF948] rounded-full uppercase text-xs md:w-full w-fit">
             See all
           </Button>
         </div>
@@ -74,7 +74,7 @@ const Products = () => {
                       </div>
                       <h1 className="md:text-lg">{item.name}</h1>
                       <p className="text-xs">INR.{item.price}</p>
-                      <Button className="gradient-green-1 text-black text-xs rounded-full px-10 py-6 hover:cursor-pointer uppercase md:w-auto w-full">
+                      <Button className="gradient-green-1 text-xs rounded-full px-10 py-6 hover:cursor-pointer uppercase md:w-auto w-full">
                         Add to cart
                       </Button>
                     </div>

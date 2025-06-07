@@ -20,12 +20,12 @@ const Testimonials3 = () => {
             >
               Sun Seekers
             </h1>
-            <p className="text-sm text-zinc-600">
+            <p className="text-sm">
               The world’s top performers PersonalNutrtion.com
             </p>
           </div>
 
-          <div className="flex flex-wrap md:gap-10 gap-4 items-center text-sm text-zinc-600">
+          <div className="flex flex-wrap md:gap-10 gap-4 items-center text-sm">
             <p className="underline">Dr.Andrew Huberman</p>
             <p>Allyson Felix</p>
             <p>Sir Lewis Hamilton</p>
@@ -44,12 +44,12 @@ const Testimonials3 = () => {
             </p>
           </div>
           <div>
-            <p className="w-[60%] text-zinc-600 md:text-md text-sm uppercase">
+            <p className="w-[60%] md:text-md text-sm uppercase">
               NEUROSCIENTIST, HOST OF THE HUBERMAN LAB PODCAST, Personal
               Nutrition PARTNER
             </p>
           </div>
-          <Button className="uppercase w-fit text-xs rounded-full bg-white text-black border-[1px]">
+          <Button className="uppercase w-fit text-xs rounded-full bg-white border-[1px]">
             See more celebrities
           </Button>
         </div>

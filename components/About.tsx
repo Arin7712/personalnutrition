@@ -28,7 +28,7 @@ const About = () => {
         Your gut is ruling
         <br /> <span className="text-highlight">your world</span>
       </h1>
-      <p data-aos="fade-up" data-aos-delay="200" className="text-sm md:w-[50%]">
+      <p data-aos="fade-up" data-aos-delay="200" className="text-sm md:w-[50%] leading-relaxed">
         Did you know that most diseases start in your gut? Ayurveda views the
         gut, or ‘Agni’ (digestive fire) as central to health. Modern science
         also calls the gut second brain in the human body. By making small
@@ -48,7 +48,7 @@ const About = () => {
         <p
           data-aos="fade-up"
           data-aos-delay="200"
-          className="text-sm md:w-[50%]"
+          className="text-sm md:w-[50%] leading-relaxed"
         >
           PersonalNutrition.com has developed an expertise in early risk
           prediction by analyzing the tongue. Our knowledge of Vedic wisdom
@@ -60,7 +60,7 @@ const About = () => {
             <div className="md:w-[50%]">
                 <Image src="/tongue.png" alt="tongue" width={400} height={400} />
             </div>
-            <div className="flex flex-col gap-6 md:w-[50%] text-start text-sm text-zinc-600">
+            <div className="flex flex-col gap-6 md:w-[50%] text-start text-sm leading-relaxed">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur arcu leo, at consectetur nunc consectetur ac. Duis ut nisi tempor, congue nisl at</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur arcu leo, at consectetur nunc consectetur ac. Duis ut nisi tempor, congue nisl at</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur arcu leo, at consectetur nunc consectetur ac. Duis ut nisi tempor, congue nisl at</p>

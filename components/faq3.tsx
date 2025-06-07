@@ -77,7 +77,7 @@ const Faq3 = ({ items = faqItems }: Faq3Props) => {
             {leftItems.map((item) => (
               <AccordionItem key={item.id} value={item.id} className="md:w-lg pb-6">
                 <AccordionTrigger className="hover:no-underline hover:opacity-60">
-                  <div className="font-medium lg:text-md text-neutral-600">{item.question}</div>
+                  <div className="font-medium lg:text-md">{item.question}</div>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="text-muted-foreground text-sm">
@@ -97,7 +97,7 @@ const Faq3 = ({ items = faqItems }: Faq3Props) => {
             {rightItems.map((item) => (
               <AccordionItem key={item.id} value={item.id} className="md:w-lg pb-6">
                 <AccordionTrigger className="hover:no-underline hover:opacity-60">
-                  <div className="font-medium lg:text-md text-neutral-600">{item.question}</div>
+                  <div className="font-medium lg:text-md">{item.question}</div>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="text-muted-foreground text-sm">
