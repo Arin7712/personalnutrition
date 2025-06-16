@@ -25,7 +25,7 @@ const HomePage = () => {
       />
 
       {/* Quiz vector on mobile, positioned in bottom right */}
-      <div className="absolute bottom-10 right-10 z-50 md:block hidden">
+      <div className="absolute md:bottom-10 bottom-20 right-10 z-50  fixed">
         <Image
           src="/quiz-vector.png"
           alt="quiz vector"
@@ -34,7 +34,7 @@ const HomePage = () => {
           height={150}
         />
       </div>
-      <div className="z-50 md:hidden block">
+      <div className="z-50 md:hidden block fixed">
         <Image
           src="/quiz-vector.png"
           alt="quiz vector"

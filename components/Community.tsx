@@ -9,11 +9,13 @@ const font = Noto_Serif({
 });
 
 const Community = () => {
+  const images = ["/c1.png", "/c2.png", "/c3.png", "/c4.png", "/c4.png"];
+
   return (
-    <div className="flex flex-col gap-6 items-center justify-center w-full md:px-[6rem] px-6">
+    <div className="flex flex-col gap-8 items-center justify-center w-full md:px-[6rem] px-6">
       <h1
         data-aos="fade-up"
-        className={`md:w-[50%] md:text-5xl text-4xl  text-center ${font.className}`}
+        className={`md:w-[50%] md:text-5xl text-4xl text-center ${font.className}`}
       >
         Join our community
       </h1>
@@ -22,15 +24,36 @@ const Community = () => {
         data-aos-delay="200"
         className="text-sm md:w-[40%] text-center"
       >
-        Follow us on instagram @personalnutrition for more updates{" "}
+        Follow us on instagram @personalnutrition for more updates
       </p>
 
-      <div className="grid  md:grid-cols-4 grid-cols-2 gap-10 py-[6rem]">
-        <Image src='/c1.png' alt='c1' width={400} height={400} />
-                <Image src='/c2.png' alt='c1' width={400} height={400} />
-        <Image src='/c3.png' alt='c1' width={400} height={400} />
-        <Image src='/c4.png' alt='c1' width={400} height={400} />
+      <div className="py-[4rem] w-full">
+        {/* Mobile: Horizontal Scroll Carousel */}
+        <div className="flex md:hidden gap-6 overflow-x-auto scrollbar-hide">
+          {images.map((src, index) => (
+            <Image
+              key={index}
+              src={src}
+              alt={`community-${index + 1}`}
+              width={300}
+              height={300}
+              className="flex-shrink-0"
+            />
+          ))}
+        </div>
 
+        {/* Desktop: Grid Layout */}
+        <div className="hidden md:grid grid-cols-5 gap-10">
+          {images.map((src, index) => (
+            <Image
+              key={index}
+              src={src}
+              alt={`community-${index + 1}`}
+              width={400}
+              height={400}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

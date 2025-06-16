@@ -51,8 +51,8 @@ const Testimonials2 = () => {
             </p>
           </div>
           <div className="md:flex gap-4 hidden">
-          <Button onClick={() => api?.scrollPrev()} className="bg-[#BED9F3] rounded-none"><Triangle className="size-4 -rotate-90 fill-white"/></Button>
-          <Button onClick={() => api?.scrollNext()} className="bg-[#BED9F3] rounded-none"><Triangle className="size-4 rotate-90 fill-white"/></Button>
+          <Button onClick={() => api?.scrollPrev()} className="bg-[#BED9F3] text-white rounded-none"><Triangle className="size-4 -rotate-90 fill-white"/></Button>
+          <Button onClick={() => api?.scrollNext()} className="bg-[#BED9F3] text-white rounded-none"><Triangle className="size-4 rotate-90 fill-white"/></Button>
           </div>
         </div>
       </div>

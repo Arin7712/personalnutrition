@@ -27,6 +27,19 @@ const font = Noto_Serif({
   display: "swap",
 });
 
+function useIsMobile(breakpoint = 768) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < breakpoint);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, [breakpoint]);
+
+  return isMobile;
+}
+
 export function FeatureSteps({
   features,
   className,
@@ -34,10 +47,13 @@ export function FeatureSteps({
   autoPlayInterval = 3000,
   imageHeight = "h-[400px]",
 }: FeatureStepsProps) {
+  const isMobile = useIsMobile();
   const [currentFeature, setCurrentFeature] = useState(0);
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
+    if (isMobile) return;
+
     const timer = setInterval(() => {
       if (progress < 100) {
         setProgress((prev) => prev + 100 / (autoPlayInterval / 100));
@@ -48,15 +64,16 @@ export function FeatureSteps({
     }, 100);
 
     return () => clearInterval(timer);
-  }, [progress, features.length, autoPlayInterval]);
+  }, [progress, features.length, autoPlayInterval, isMobile]);
 
   return (
     <div className={cn("md:py-[6rem]", className)}>
       <div className="mx-auto w-full">
         <div className="flex flex-col items-center md:grid md:grid-cols-2 w-full ">
+          {/* Desktop Image Display */}
           <div
             className={cn(
-              "relative min-h-screen md:h-[110vh] md:overflow-hidden  items-center justify-center md:flex hidden"
+              "relative min-h-screen md:h-[110vh] md:overflow-hidden items-center justify-center md:flex hidden"
             )}
           >
             <AnimatePresence mode="wait">
@@ -74,7 +91,7 @@ export function FeatureSteps({
                       <Image
                         src={feature.image}
                         alt={feature.step}
-                        className="transition-transform transform md:max-w-auto w-full h-auto object-contain"
+                        className="transition-transform transform w-full h-auto object-contain"
                         width={800}
                         height={800}
                       />
@@ -84,15 +101,17 @@ export function FeatureSteps({
             </AnimatePresence>
           </div>
 
-          <div className="w-full h-[110vh] bg-[url('/ellipse2.png')] bg-no-repeat bg-center bg-[length:800px_800px] flex flex-col items-center justify-between py-6 pr-12">
+          {/* Text and Step Selection */}
+          <div className="w-full h-[110vh] bg-[url('/ellipse2.png')] bg-no-repeat bg-center md:bg-[length:800px_800px] bg-[length:500px_500px] flex flex-col items-center justify-between py-6 md:pr-12">
             <h1 className={`md:text-4xl text-3xl ${font.className}`}>
               Our client goals
-            </h1>{" "}
+            </h1>
             <div className="flex flex-col space-y-6 w-full">
               {features.map((feature, index) => (
                 <motion.div
                   key={index}
-                  className="flex items-center justify-end gap-6 md:gap-[2rem]"
+                  onClick={() => isMobile && setCurrentFeature(index)}
+                  className="flex items-center md:justify-end md:pl-0 pl-6 gap-6 md:gap-[2rem] cursor-pointer"
                   initial={{ opacity: 0.3 }}
                   animate={{ opacity: index === currentFeature ? 1 : 0.3 }}
                   transition={{ duration: 1 }}
@@ -110,30 +129,38 @@ export function FeatureSteps({
                         : "bg-muted border-muted-foreground"
                     )}
                   >
-                    {index <= currentFeature ? (
-                      <span className="text-lg ">{index + 1}</span>
-                    ) : (
-                      <span className="text-lg ">{index + 1}</span>
-                    )}
+                    <span className="text-lg">{index + 1}</span>
                   </motion.div>
                 </motion.div>
               ))}
             </div>
             <div className="flex justify-center">
-              <p className="w-[70%] text-center text-sm">
+              <p className="md:w-[70%] text-center text-sm md:max-w-full max-w-sm">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
-                iaculis libero. Integer{" "}
+                iaculis libero. Integer
               </p>
             </div>
           </div>
+
+          {/* Mobile Image Display */}
           <div className="md:hidden block w-full">
-                      <Image
-                        src='/s1.png'
-                        alt='a'
-                        className="transition-transform transform md:max-w-auto w-full h-auto object-contain"
-                        width={800}
-                        height={800}
-                      />
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentFeature}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -30 }}
+                transition={{ duration: 0.6 }}
+              >
+                <Image
+                  src={features[currentFeature].image}
+                  alt={features[currentFeature].step}
+                  className="transition-transform transform w-full h-auto object-contain"
+                  width={800}
+                  height={800}
+                />
+              </motion.div>
+            </AnimatePresence>
           </div>
         </div>
       </div>

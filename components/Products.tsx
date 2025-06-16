@@ -29,10 +29,10 @@ const Products = () => {
     <div className="flex flex-col md:gap-6 gap-6 w-full md:px-[6rem] px-6 py-[6rem]">
       <div className="flex justify-end w-full">
         <div className="md:flex gap-4 hidden">
-          <Button onClick={() => api?.scrollPrev()} className="bg-[#BED9F3]">
+          <Button onClick={() => api?.scrollPrev()} className="bg-[#BED9F3] text-white">
             <Triangle className="size-4 -rotate-90 fill-white" />
           </Button>
-          <Button onClick={() => api?.scrollNext()} className="bg-[#BED9F3]">
+          <Button onClick={() => api?.scrollNext()} className="bg-[#BED9F3] text-white">
             <Triangle className="size-4 rotate-90 fill-white" />
           </Button>
         </div>{" "}
@@ -49,7 +49,7 @@ const Products = () => {
             are here to empower you with tools that will heal, nourish, restore,
             balance, energize, and rejuvenate you. 
           </p>
-          <Button className="bg-[#CAF948] rounded-full uppercase text-xs md:w-full w-fit">
+          <Button className="bg-[#CAF948] py-4 rounded-full uppercase text-xs md:w-full w-fit px-10">
             See all
           </Button>
         </div>
@@ -63,7 +63,7 @@ const Products = () => {
                   key={index}
                 >
                   <div className="flex md:flex-row flex-col gap-6 text-start items-center">
-                    <div className="flex flex-col w-[90%] gap-4">
+                    <div className="flex flex-col w-[90%] gap-2 md:gap-4">
                       <div className="p-10 bg-neutral-300 rounded-md">
                         <Image
                           src={item.image}
@@ -83,11 +83,11 @@ const Products = () => {
               ))}
             </CarouselContent>
           </Carousel>
-          <div className="md:hidden gap-4 flex justify-center">
-            <Button onClick={() => api?.scrollPrev()} className="bg-[#BED9F3]">
+          <div className="md:hidden gap-4 flex justify-center pt-6">
+            <Button onClick={() => api?.scrollPrev()} className="bg-[#BED9F3] text-white rounded-none">
               <Triangle className="size-4 -rotate-90 fill-white" />
             </Button>
-            <Button onClick={() => api?.scrollNext()} className="bg-[#BED9F3]">
+            <Button onClick={() => api?.scrollNext()} className="bg-[#BED9F3] text-white rounded-none">
               <Triangle className="size-4 rotate-90 fill-white" />
             </Button>
           </div>

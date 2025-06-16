@@ -80,7 +80,7 @@ const Faq3 = ({ items = faqItems }: Faq3Props) => {
                   <div className="font-medium lg:text-md">{item.question}</div>
                 </AccordionTrigger>
                 <AccordionContent>
-                  <div className="text-muted-foreground text-sm">
+                  <div className="text-muted-foreground text-sm leading-loose">
                     {item.answer}
                   </div>
                 </AccordionContent>

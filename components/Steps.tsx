@@ -81,7 +81,7 @@ const Steps = () => {
         </div>
       </div>
 
-        <Button className='gradient-green-1 text-xs rounded-full px-10 py-6 hover:cursor-pointer uppercase md:w-auto w-full'>Shop all</Button>
+        <Button className='gradient-green-1 text-xs rounded-full px-14 md:px-10 py-8 md:py-6 hover:cursor-pointer uppercase md:w-auto w-fit md:tracking-normal tracking-wider'>Shop all</Button>
     </div>
   );
 };

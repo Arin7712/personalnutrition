@@ -25,7 +25,7 @@ const Press = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel iaculis libero. Integer
       </p>
 
-      <div className="grid  md:grid-cols-4 grid-cols-2 gap-10 py-[6rem]">
+      <div className="grid  md:grid-cols-4 grid-cols-2 gap-14 md:gap-10 py-[3.5rem] md:py-[6rem]">
         <Image src='/box.png' alt='c1' width={400} height={400}  className="rounded-md"/>
         <Image src='/box.png' alt='c1' width={400} height={400}  className="rounded-md"/>
         <Image src='/box.png' alt='c1' width={400} height={400}  className="rounded-md"/>
