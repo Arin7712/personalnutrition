@@ -26,7 +26,7 @@ const Event = () => {
         A lot is happening at our end. Big shifts, new development, and exciting
         meetups. {" "}
       </p>
-      <Button className="rounded-full uppercase text-xs bg-white border-[1px] px-10 md:py-2 py-4 md:px-6 border-black">
+      <Button className="rounded-full hover:bg-[#022425] hover:text-[#ffffff] uppercase text-xs bg-white border-[1px] px-10 md:py-2 py-4 md:px-6 border-black">
         See more
       </Button>
       <div className="flex gap-4 md:gap-6 py-[3.5rem] md:py-[6rem] overflow-x-auto md:overflow-x-visible scrollbar-hide">

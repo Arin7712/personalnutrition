@@ -60,7 +60,7 @@ const Products = () => {
             are here to empower you with tools that will heal, nourish, restore,
             balance, energize, and rejuvenate you. 
           </p>
-          <Button className="bg-[#CAF948] py-4 rounded-full uppercase text-xs md:w-full w-fit px-10">
+          <Button className="bg-[#CAF948] py-4 rounded-full uppercase text-xs md:w-full w-fit px-10 hover:text-[#ffffff] hover:bg-[#5DC27A]">
             See all
           </Button>
         </div>

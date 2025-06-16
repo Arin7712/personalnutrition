@@ -105,7 +105,7 @@ const [selected, setSelected] = useState<keyof typeof testimonials>("Dr.Andrew H
               </p>
             </motion.div>
           </AnimatePresence>
-        <Button className="text-black w-fit bg-transparent border-[1px] rounded-full px-10 py-4 shadow-none uppercase text-xs">See more celebrities</Button>
+        <Button className="text-black w-fit bg-transparent border-[1px] rounded-full px-10 py-4 shadow-none uppercase text-xs hover:bg-[#022425] hover:text-[#ffffff]">See more celebrities</Button>
         </div>
 
 
