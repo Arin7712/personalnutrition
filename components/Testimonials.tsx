@@ -62,7 +62,7 @@ const [selected, setSelected] = useState<keyof typeof testimonials>("Dr.Andrew H
             {Object.keys(testimonials).map((name) => (
               <button
                 key={name}
-                onClick={() => setSelected(name)}
+                onClick={() => setSelected(name as keyof typeof testimonials)}
                 className={`px-3 py-1 transition ${
                   selected === name ? "underline" : ""
                 }`}
