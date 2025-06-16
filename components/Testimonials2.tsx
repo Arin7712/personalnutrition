@@ -83,8 +83,8 @@ const Testimonials2 = () => {
             </CarouselContent>
         </Carousel>
                   <div className="md:hidden gap-4 flex justify-center">
-          <Button onClick={() => api?.scrollPrev()} className="bg-[#BED9F3]"><Triangle className="size-4 -rotate-90 fill-white"/></Button>
-          <Button onClick={() => api?.scrollNext()} className="bg-[#BED9F3]"><Triangle className="size-4 rotate-90 fill-white"/></Button>
+          <Button onClick={() => api?.scrollPrev()} className="bg-[#BED9F3] text-white"><Triangle className="size-4 -rotate-90 fill-white"/></Button>
+          <Button onClick={() => api?.scrollNext()} className="bg-[#BED9F3] text-white"><Triangle className="size-4 rotate-90 fill-white"/></Button>
           </div>
       </div>
     </div>
