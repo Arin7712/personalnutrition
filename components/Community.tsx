@@ -12,7 +12,7 @@ const Community = () => {
   const images = ["/c1.png", "/c2.png", "/c3.png", "/c4.png", "/c4.png"];
 
   return (
-    <div className="flex flex-col gap-8 items-center justify-center w-full md:px-[6rem] px-6">
+    <div className="flex flex-col gap-8 items-center justify-center w-full md:px-[6rem] px-6 pt-[6rem] md:pt-[10rem]">
       <h1
         data-aos="fade-up"
         className={`md:w-[50%] md:text-5xl text-4xl text-center ${font.className}`}

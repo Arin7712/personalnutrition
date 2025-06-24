@@ -31,7 +31,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-6 items-center justify-center text-center w-full md:px-0 px-6">
+    <div className="flex flex-col gap-6 items-center justify-center text-center w-full pt-[6rem] md:pt-[10rem] md:px-0 px-6">
       <p className="text-sm uppercase">understanding of nutrition</p>
       <h1
         data-aos="fade-up"
