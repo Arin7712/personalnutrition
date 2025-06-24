@@ -27,13 +27,20 @@ export default function RootLayout({
         className={font.className}
       >
         <Navbar/>
-      <div className="absolute md:bottom-10 bottom-20 right-10 z-20  fixed">
+      <div className="absolute bottom-10 right-10 z-20 fixed">
         <Image
           src="/quiz-vector.png"
           alt="quiz vector"
-          className="object-contain"
+          className="object-contain md:block hidden"
           width={150}
           height={150}
+        />
+                <Image
+          src="/quiz-vector.png"
+          alt="quiz vector"
+          className="object-contain md:hidden block"
+          width={100}
+          height={100}
         />
       </div>
         {children}
