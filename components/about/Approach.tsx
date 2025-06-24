@@ -35,7 +35,7 @@ const fadeInUp = (delay: number): Variants => ({
 
 const Approach = () => {
   return (
-    <div className="flex flex-col gap-6 md:justify-center w-full md:h-[100vh] md:px-[6rem] px-6 pt-[6rem]">
+    <div className="flex flex-col gap-6 md:justify-center w-full md:h-[100vh] md:px-[6rem] px-6 py-[6rem] md:py-[10rem]">
 
       <div className="flex flex-col items-center justify-center gap-6">
         <motion.h1

@@ -10,7 +10,7 @@ const HomePage = () => {
       <div className="absolute top-0 right-0 w-1/2 h-full bg-[url('/homebg.png')] bg-cover bg-[center_top_-150px] z-0 md:block hidden" />
       
       {/* Main content */}
-      <div className="relative z-10">
+      <div className="relative md:z-10">
         {/* <Navbar /> */}
         <Hero />
       </div>

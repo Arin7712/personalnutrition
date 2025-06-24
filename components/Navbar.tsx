@@ -41,7 +41,9 @@ const Navbar = () => {
                     <ChevronDown className="size-3" />
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
-                    <DropdownMenuLabel className="itailic">Personalized Guide</DropdownMenuLabel>
+                    <DropdownMenuLabel className="itailic">
+                      Personalized Guide
+                    </DropdownMenuLabel>
                     <DropdownMenuItem>Assisting Journey</DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
@@ -62,37 +64,42 @@ const Navbar = () => {
       <div className="md:hidden block">
         <Sheet>
           <SheetTrigger>
-            <AlignJustify />
+              <AlignJustify />
           </SheetTrigger>
           <SheetContent>
             <SheetHeader>
               <SheetTitle>
-                <Image src='/logo.png' alt='logo' width={80} height={80} />
+                <Image src="/logo.png" alt="logo" width={80} height={80} />
               </SheetTitle>
             </SheetHeader>
             <div>
               <ul className="flex flex-col gap-4">
-          {navItems.map((item, index) => (
-            <li key={index} className="hover:cursor-pointer border-t-[1px] px-4 pt-4">
-              {item.name === "Products" ? (
-                <DropdownMenu>
-                  <DropdownMenuTrigger className="flex items-center gap-2 focus:outline-none hover:cursor-pointer">
-                    {item.name}
-                    <ChevronDown className="size-3" />
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent>
-                    <DropdownMenuLabel className="itailic">Personalized Guide</DropdownMenuLabel>
-                    <DropdownMenuItem>Assisting Journey</DropdownMenuItem>
-                  </DropdownMenuContent>
-                </DropdownMenu>
-              ) : (
-                <a href={item.href} className="text-md">
-                  {item.name}
-                </a>
-              )}
-            </li>
-          ))}
-        </ul>
+                {navItems.map((item, index) => (
+                  <li
+                    key={index}
+                    className="hover:cursor-pointer border-t-[1px] px-4 pt-4"
+                  >
+                    {item.name === "Products" ? (
+                      <DropdownMenu>
+                        <DropdownMenuTrigger className="flex items-center gap-2 focus:outline-none hover:cursor-pointer">
+                          {item.name}
+                          <ChevronDown className="size-3" />
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent>
+                          <DropdownMenuLabel className="itailic">
+                            Personalized Guide
+                          </DropdownMenuLabel>
+                          <DropdownMenuItem>Assisting Journey</DropdownMenuItem>
+                        </DropdownMenuContent>
+                      </DropdownMenu>
+                    ) : (
+                      <a href={item.href} className="text-md">
+                        {item.name}
+                      </a>
+                    )}
+                  </li>
+                ))}
+              </ul>
             </div>
           </SheetContent>
         </Sheet>
