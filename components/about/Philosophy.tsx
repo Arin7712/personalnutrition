@@ -66,8 +66,7 @@ const Philosophy = () => {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            Food is the medicine we need to heal. But, when it comes to
-            nutrition, one size doesn’t fit all...
+Food is the medicine we need to heal. But, when it comes to nutrition, one size doesn’t fit all. Everyone’s body has a unique constitution. And when we give it the nutrition as per its constitution, the body will experience optimal health. It is that simple. It isn’t rocket science. It is just nutrition science and ancient wisdom.
           </motion.p>
         </div>
       </div>
@@ -109,8 +108,7 @@ const Philosophy = () => {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            We personalize the plan to the last atom possible...
-          </motion.p>
+We personalize the plan to the last atom possible. Your body has its own language and we decode it. We analyze the tongue, assess the agni (digestive fire), and study the body constitution. Our learnings from the data of 15,000 members help us get you results that truly matter.           </motion.p>
         </div>
       </div>
     </div>
