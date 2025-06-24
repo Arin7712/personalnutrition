@@ -26,7 +26,7 @@ const fadeInUp = (delay: number): Variants => ({
 
 const Impact = () => {
   return (
-    <div className="flex flex-col gap-6 bg-[url(/aboutbg2.png)] md:bg-[url(/aboutbg.png)] text-white bg-no-repeat bg-cover md:pb-0 pb-[6rem] justify-end md:justify-center w-full h-[100vh] md:px-[6rem] px-6 mt-6  md:mt-[6rem]">
+    <div className="flex flex-col gap-6 bg-[url(/aboutbg2.png)] md:bg-[url(/aboutimpact.png)] text-white bg-no-repeat bg-cover md:pb-0 pb-[6rem] justify-end md:justify-center w-full h-[100vh] md:px-[6rem] px-6 mt-6  md:mt-[6rem]">
       
       <motion.h1
         className={`${font.className} md:text-5xl text-3xl font-light`}

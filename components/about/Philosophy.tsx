@@ -37,7 +37,7 @@ const Philosophy = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <Image src="/about1.png" alt="about" width={600} height={400} />
+          <Image src="/about4.png" alt="about" width={600} height={400} />
         </motion.div>
 
         <div className="space-y-3">
@@ -79,7 +79,7 @@ Food is the medicine we need to heal. But, when it comes to nutrition, one size 
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <Image src="/about2.png" alt="about" width={600} height={400} />
+          <Image src="/about5.png" alt="about" width={600} height={400} />
         </motion.div>
 
         <div className="space-y-3">

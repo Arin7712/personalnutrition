@@ -26,7 +26,7 @@ const Hero = () => {
         variants={fadeIn}
         transition={{ delay: 0.2 }}
       >
-        <Image src="/aboutrect.png" alt="aboutrect" width={250} height={250} />
+        <Image src="/abouthome.png" alt="aboutrect" width={280} height={250} />
       </motion.div>
 
       <motion.div
