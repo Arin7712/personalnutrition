@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
+import Image from "next/image";
+import Navbar from "@/components/Navbar";
 
 const font = Open_Sans({
   subsets: ["latin"],
@@ -23,7 +26,28 @@ export default function RootLayout({
       <body
         className={font.className}
       >
+        <Navbar/>
+              {/* Quiz vector on mobile, positioned in bottom right */}
+      <div className="absolute md:bottom-10 bottom-20 right-10 z-50  fixed">
+        <Image
+          src="/quiz-vector.png"
+          alt="quiz vector"
+          className="object-contain"
+          width={150}
+          height={150}
+        />
+      </div>
+      <div className="z-50 md:hidden block fixed">
+        <Image
+          src="/quiz-vector.png"
+          alt="quiz vector"
+          className="object-contain left-60 bottom-35 relative"
+          width={100}
+          height={140}
+        />
+      </div>
         {children}
+        <Footer/>
       </body>
     </html>
   );

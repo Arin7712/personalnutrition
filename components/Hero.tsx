@@ -27,7 +27,7 @@ useEffect(() => {
     });
   }, []);
     return (
-    <div className='flex flex-col gap-6 md:items-start items-center md:text-start text-center md:justify-center justify-start md:pt-0 pt-[6rem] md:w-[50%] md:h-[80vh] md:px-[6rem] px-6'>
+    <div className='flex flex-col gap-6 md:items-start items-center md:text-start text-center md:justify-center justify-start md:pt-0 pt-[6rem] md:w-[50%] md:h-[100vh] md:px-[6rem] px-6'>
       <h1 data-aos="fade-up" className={`${font.className} md:text-6xl sm:text-5xl text-3xl`}>Interpret Your Gut To <span className='text-highlight'>Interpret</span> Your Health</h1>
       <p data-aos="fade-up" data-aos-delay="200" className='text-sm sm:w-[85%] w-[90%]'>Your gut holds the key to your health. Through tongue analysis and dosha reading, we design a personalized food intelligence report suited to your unique nutrition needs, for optimal gut health.</p>
          <div data-aos="fade-up" data-aos-delay="400" className='md:block flex w-full'>

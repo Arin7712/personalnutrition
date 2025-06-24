@@ -36,7 +36,6 @@ export default function Home() {
       <Press/>
       <Article/>
       <Community/>
-      <Footer/>
     </div>
   );
 }

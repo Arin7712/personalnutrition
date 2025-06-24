@@ -11,7 +11,7 @@ const HomePage = () => {
       
       {/* Main content */}
       <div className="relative z-10">
-        <Navbar />
+        {/* <Navbar /> */}
         <Hero />
       </div>
 
@@ -24,25 +24,6 @@ const HomePage = () => {
         height={400}
       />
 
-      {/* Quiz vector on mobile, positioned in bottom right */}
-      <div className="absolute md:bottom-10 bottom-20 right-10 z-50  fixed">
-        <Image
-          src="/quiz-vector.png"
-          alt="quiz vector"
-          className="object-contain"
-          width={150}
-          height={150}
-        />
-      </div>
-      <div className="z-50 md:hidden block fixed">
-        <Image
-          src="/quiz-vector.png"
-          alt="quiz vector"
-          className="object-contain left-60 bottom-35 relative"
-          width={100}
-          height={140}
-        />
-      </div>
     </div>
   );
 };
