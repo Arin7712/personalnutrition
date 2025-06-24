@@ -77,7 +77,14 @@ const Event = () => {
                 alt={`event${n}`}
                 width={400}
                 height={400}
-                className="rounded-lg"
+                className="rounded-lg md:block hidden"
+              />
+              <Image
+                src={`/event${n}.png`}
+                alt={`event${n}`}
+                width={300}
+                height={300}
+                className="rounded-lg md:hidden block"
               />
             </motion.div>
           ))}
