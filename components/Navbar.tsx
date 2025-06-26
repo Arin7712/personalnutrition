@@ -8,7 +8,6 @@ import { Button } from "./ui/button";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -23,10 +22,14 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+
+  const path = usePathname();
+
   return (
-    <div className="flex items-center justify-between md:px-[6rem] px-6 pt-10 absolute w-full z-10">
+    <div className={`flex items-center justify-between md:px-[6rem] px-6 pt-10 ${path == '/' ? 'absolute' : 'relative'} w-full z-20`}>
       <div className="md:order-[-1] order-1">
         <Image src="/logo.png" alt="logo" width={100} height={100} />
       </div>
