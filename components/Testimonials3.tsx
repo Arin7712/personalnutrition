@@ -50,7 +50,7 @@ const [selected, setSelected] = useState<keyof typeof testimonials>("Dr.Andrew H
       <div className="flex flex-col md:flex-row justify-center">
         <div className="flex flex-col md:gap-[4rem] gap-10 md:w-[70%]">
           <div className="space-y-4">
-            <h1 className={`md:text-5xl text-3xl ${font.className}`}>
+            <h1 className={`md:text-5xl font-light text-3xl ${font.className}`}>
               Sun Seekers
             </h1>
             <p className="text-sm text-zinc-600">
@@ -85,7 +85,7 @@ const [selected, setSelected] = useState<keyof typeof testimonials>("Dr.Andrew H
               exit="exit"
             >
               <p
-                className={`${font.className} md:text-3xl md:w-[70%] text-xl leading-relaxed`}
+                className={`${font.className} md:text-3xl font-light md:w-[70%] text-xl leading-relaxed`}
               >
                 {testimonials[selected].quote}
               </p>

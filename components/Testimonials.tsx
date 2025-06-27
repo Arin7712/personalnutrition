@@ -50,7 +50,7 @@ const [selected, setSelected] = useState<keyof typeof testimonials>("Dr.Andrew H
       <div className="flex flex-col md:flex-row justify-center">
         <div className="flex flex-col md:gap-[4rem] gap-10 md:w-[70%]">
           <div className="space-y-4">
-            <h1 className={`md:text-5xl text-3xl ${font.className}`}>
+            <h1 className={`md:text-5xl text-3xl font-light ${font.className}`}>
               Celebrities Testimonials
             </h1>
             <p className="text-sm text-zinc-600">
@@ -85,7 +85,7 @@ const [selected, setSelected] = useState<keyof typeof testimonials>("Dr.Andrew H
               exit="exit"
             >
               <p
-                className={`${font.className} md:text-3xl md:w-[70%] text-xl leading-relaxed`}
+                className={`${font.className} md:text-3xl md:w-[70%] text-xl font-light leading-relaxed`}
               >
                 {testimonials[selected].quote}
               </p>
@@ -112,19 +112,7 @@ const [selected, setSelected] = useState<keyof typeof testimonials>("Dr.Andrew H
         </div>
       </div>
 
-      <div className="relative md:w-[52%] w-full aspect-[1/1] md:mx-auto md:py-0 py-[6rem]">
-        <Image
-          src="/ellipse.png"
-          alt="sunseekers"
-          fill
-          className="object-contain"
-        />
-        <h1
-          className={`absolute flex flex-col item-center justify-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:text-4xl md:max-w-md text-3xl z-1 leading-16 ${font.className}`}
-        >
-          100 Reviews With An Average Rating Of 4/5 ✨
-        </h1>
-      </div>
+
     </div>
   );
 };

@@ -15,7 +15,7 @@ const Community = () => {
     <div className="flex flex-col gap-8 items-center justify-center w-full md:px-[6rem] px-6 pt-[6rem] md:pt-[10rem]">
       <h1
         data-aos="fade-up"
-        className={`md:w-[50%] md:text-5xl text-4xl text-center ${font.className}`}
+        className={`md:w-[50%] md:text-5xl font-light text-4xl text-center ${font.className}`}
       >
         Join our community
       </h1>
