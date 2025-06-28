@@ -41,7 +41,7 @@ export default function BarGraph({ data, maxValue = 200 }: BarGraphProps) {
       </div>
 
       {/* Chart Row */}
-      <div className="flex items-end justify-center gap-10 h-[500px] px-6 overflow-x-auto scrollbar-hide">
+      <div className="flex items-end md:justify-center gap-10 h-[500px] px-6 overflow-x-auto scrollbar-hide">
         {/* Y-Axis Line and Labels */}
         <div className="relative h-[430px] w-10 flex flex-col justify-between items-end pr-2 text-xs text-gray-500">
           {ticks.map((val, idx) => (
