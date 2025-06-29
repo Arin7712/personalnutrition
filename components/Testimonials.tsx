@@ -1,15 +1,13 @@
-'use client'
-import { Noto_Serif } from "next/font/google";
-import Image from "next/image";
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { FaStar } from "react-icons/fa";
-
+'use client';
+import { Noto_Serif } from 'next/font/google';
+import Image from 'next/image';
+import React, { useRef, useState } from 'react';
+import { motion, useInView } from 'framer-motion';
 
 const font = Noto_Serif({
-  subsets: ["latin"],
-  weight: ["100", "200", "300"],
-  display: "swap",
+  subsets: ['latin'],
+  weight: ['100', '200', '300'],
+  display: 'swap',
 });
 
 const testimonials = {
@@ -36,83 +34,75 @@ const testimonials = {
   },
 };
 
-const fadeVariant = {
-  initial: { opacity: 0, y: 10 },
-  animate: { opacity: 1, y: 0, transition: { duration: 0.4 } },
-  exit: { opacity: 0, y: -10, transition: { duration: 0.3 } },
-};
+const fadeIn = (isInView: boolean, delay = 0) => ({
+  initial: { opacity: 0, y: 20 },
+  animate: isInView ? { opacity: 1, y: 0 } : {},
+  transition: { duration: 0.6, delay },
+});
 
 const Testimonials = () => {
-const [selected, setSelected] = useState<keyof typeof testimonials>("Dr.Andrew Huberman");
+  const [selected, setSelected] = useState<keyof typeof testimonials>("Dr.Andrew Huberman");
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   return (
-    <div className="flex flex-col md:px-[6rem] px-6 pt-[6rem]">
+    <div
+      ref={ref}
+      className="flex flex-col md:px-[6rem] px-6 pt-[6rem]"
+    >
       <div className="flex flex-col md:flex-row justify-center">
         <div className="flex flex-col md:gap-[4rem] gap-10 md:w-[70%]">
-          <div className="space-y-4">
+          <motion.div className="space-y-4" {...fadeIn(isInView, 0)}>
             <h1 className={`md:text-5xl text-3xl font-light ${font.className}`}>
               Celebrities Testimonials
             </h1>
             <p className="text-sm text-zinc-600">
               The world’s top performers PersonalNutrtion.com
             </p>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-wrap md:gap-10 gap-4 items-center text-sm">
+          <motion.div
+            className="flex flex-wrap md:gap-10 gap-4 items-center text-sm"
+            {...fadeIn(isInView, 0.2)}
+          >
             {Object.keys(testimonials).map((name) => (
               <button
                 key={name}
                 onClick={() => setSelected(name as keyof typeof testimonials)}
-                className={`px-3 py-1 transition  ${
-                  selected === name ? "underline" : ""
-                }`}
+                className={`px-3 py-1 transition ${selected === name ? "underline" : ""}`}
               >
                 {name}
               </button>
             ))}
-          </div>
+          </motion.div>
 
-          <div className="md:hidden block flex justify-center">
+          <motion.div
+            className="md:hidden block flex justify-center"
+            {...fadeIn(isInView, 0.4)}
+          >
             <Image src="/video1.png" alt="video" width={300} height={300} />
-          </div>
+          </motion.div>
 
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={selected + "_quote"}
-              variants={fadeVariant}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-            >
-              <p
-                className={`${font.className} md:text-3xl md:w-[70%] text-xl font-light leading-relaxed`}
-              >
-                {testimonials[selected].quote}
-              </p>
-            </motion.div>
-          </AnimatePresence>
+          <motion.div {...fadeIn(isInView, 0.6)}>
+            <p className={`${font.className} md:text-3xl md:w-[70%] text-xl font-light leading-relaxed`}>
+              {testimonials[selected].quote}
+            </p>
+          </motion.div>
 
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={selected + "_role"}
-              variants={fadeVariant}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-            >
-              <p className="w-[60%] text-zinc-600 md:text-md text-sm">
-                {testimonials[selected].role}
-              </p>
-            </motion.div>
-          </AnimatePresence>
+          <motion.div {...fadeIn(isInView, 0.8)}>
+            <p className="w-[60%] text-zinc-600 md:text-md text-sm">
+              {testimonials[selected].role}
+            </p>
+          </motion.div>
         </div>
 
-        <div className="md:block hidden">
+        <motion.div
+          className="md:block hidden"
+          {...fadeIn(isInView, 0.5)}
+        >
           <Image src="/video1.png" alt="video" width={400} height={400} />
-        </div>
+        </motion.div>
       </div>
-
-
     </div>
   );
 };

@@ -1,6 +1,8 @@
+"use client";
 import { Noto_Serif } from "next/font/google";
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 const font = Noto_Serif({
   subsets: ["latin"],
@@ -9,45 +11,42 @@ const font = Noto_Serif({
 });
 
 const Feature = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const fadeIn = (delay = 0) => ({
+    initial: { opacity: 0, y: 20 },
+    animate: isInView ? { opacity: 1, y: 0 } : {},
+    transition: { duration: 0.6, delay },
+  });
+
   return (
-    <div className="flex flex-col md:gap-[6rem] gap-[2rem] items-center justify-center md:text-center w-full pt-[6rem] md:px-[6rem] px-6">
+    <div
+      ref={ref}
+      className="flex flex-col md:gap-[6rem] gap-[2rem] items-center justify-center md:text-center w-full pt-[6rem] md:px-[6rem] px-6"
+    >
       <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
-        <div className="md:bg-[url(/bullet2.png)] bg-no-repeat bg-center border md:border-none p-6 md:p-[4rem] rounded-lg bg-cover flex flex-col item-center justify-center">
-          <h1 className={`${font.className} text-lg md:text-3xl font-light uppercase`}>
-            WEIGHT:
-          </h1>
-          <p className="text-sm">66.7 kg down to 61.4 kg</p>
-        </div>
-        <div className="md:bg-[url(/bullet.png)] border md:border-none bg-no-repeat bg-center p-6 md:p-[4rem] rounded-lg bg-cover flex flex-col item-center justify-center">
-          <h1 className={`${font.className} text-lg md:text-3xl font-light uppercase`}>
-            HbA1c: 
-          </h1>
-          <p className="text-sm">7.5% to 6.1%</p>
-        </div>
-        <div className="md:bg-[url(/bullet2.png)] border md:border-none bg-no-repeat bg-center p-6 md:p-[4rem] rounded-lg bg-cover flex flex-col item-center justify-center">
-          <h1 className={`${font.className} text-lg md:text-3xl font-light uppercase`}>
-            Wait and hips
-          </h1>
-          <p className="text-sm">Substantial reductions</p>
-        </div>
-        <div className="md:bg-[url(/bullet.png)] border md:border-none bg-no-repeat bg-center p-6 md:p-[4rem] rounded-lg bg-cover flex flex-col item-center justify-center">
-          <h1 className={`${font.className} text-lg md:text-3xl font-light uppercase`}>
-            FASTING BLOOD SUGAR:  
-          </h1>
-          <p className="text-sm">154 down to 103</p>
-        </div>
-        <div className="md:bg-[url(/bullet2.png)] border md:border-none bg-no-repeat bg-center p-6 md:p-[4rem] rounded-lg bg-cover flex flex-col item-center justify-center">
-          <h1 className={`${font.className} text-lg md:text-3xl font-light uppercase`}>
-            TRIGLYCERIDES: 
-          </h1>
-          <p className="text-sm">192 down to 150</p>
-        </div>
-        <div className="md:bg-[url(/bullet.png)] border md:border-none bg-no-repeat bg-center p-6 md:p-[4rem] rounded-lg bg-cover flex flex-col item-center justify-center">
-          <h1 className={`${font.className} text-lg md:text-3xl font-light uppercase`}>
-            VITAMIN D:
-          </h1>
-          <p className="text-sm">9.98 increased to 12.98</p>
-        </div>
+        {[
+          { title: "WEIGHT:", desc: "66.7 kg down to 61.4 kg", bg: "bullet2.png" },
+          { title: "HbA1c:", desc: "7.5% to 6.1%", bg: "bullet.png" },
+          { title: "Wait and hips", desc: "Substantial reductions", bg: "bullet2.png" },
+          { title: "FASTING BLOOD SUGAR:", desc: "154 down to 103", bg: "bullet.png" },
+          { title: "TRIGLYCERIDES:", desc: "192 down to 150", bg: "bullet2.png" },
+          { title: "VITAMIN D:", desc: "9.98 increased to 12.98", bg: "bullet.png" },
+        ].map((item, index) => (
+          <motion.div
+            key={index}
+            className={`md:bg-[url(/${item.bg})] border md:border-none bg-no-repeat bg-center p-6 md:p-[4rem] rounded-lg bg-cover flex flex-col item-center justify-center`}
+            {...fadeIn(index * 0.2)}
+          >
+            <h1
+              className={`${font.className} text-lg md:text-3xl font-light uppercase`}
+            >
+              {item.title}
+            </h1>
+            <p className="text-sm">{item.desc}</p>
+          </motion.div>
+        ))}
       </div>
     </div>
   );
