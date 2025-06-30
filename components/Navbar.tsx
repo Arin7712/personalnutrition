@@ -23,6 +23,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const Navbar = () => {
 
@@ -45,7 +46,9 @@ const Navbar = () => {
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
                     <DropdownMenuLabel className="itailic">
+                      <Link href='/product'>
                       Personalized Guide
+                      </Link>
                     </DropdownMenuLabel>
                     <DropdownMenuItem>Assisting Journey</DropdownMenuItem>
                   </DropdownMenuContent>
