@@ -26,11 +26,14 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 const Navbar = () => {
-
   const path = usePathname();
 
   return (
-    <div className={`flex items-center justify-between md:px-[6rem] px-6 pt-10 ${path == '/' ? 'absolute' : 'relative'} w-full z-20`}>
+    <div
+      className={`flex items-center justify-between md:px-[6rem] px-6 pt-10 ${
+        path == "/" ? "absolute" : "relative"
+      } w-full z-20`}
+    >
       <div className="md:order-[-1] order-1">
         <Image src="/logo.png" alt="logo" width={100} height={100} />
       </div>
@@ -46,9 +49,10 @@ const Navbar = () => {
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
                     <DropdownMenuLabel className="itailic">
-                      <Link href='/product'>
-                      Personalized Guide
-                      </Link>
+                      <Link href="/product">Personalized Guide</Link>
+                    </DropdownMenuLabel>
+                    <DropdownMenuLabel className="itailic">
+                      <Link href="/product-2">Product 2</Link>
                     </DropdownMenuLabel>
                     <DropdownMenuItem>Assisting Journey</DropdownMenuItem>
                   </DropdownMenuContent>
@@ -70,7 +74,7 @@ const Navbar = () => {
       <div className="md:hidden block">
         <Sheet>
           <SheetTrigger>
-              <AlignJustify />
+            <AlignJustify />
           </SheetTrigger>
           <SheetContent>
             <SheetHeader>
@@ -93,7 +97,10 @@ const Navbar = () => {
                         </DropdownMenuTrigger>
                         <DropdownMenuContent>
                           <DropdownMenuLabel className="itailic">
-                            Personalized Guide
+                            <Link href="/product">Personalized Guide</Link>
+                          </DropdownMenuLabel>
+                          <DropdownMenuLabel className="itailic">
+                            <Link href="/product-2">Product 2</Link>
                           </DropdownMenuLabel>
                           <DropdownMenuItem>Assisting Journey</DropdownMenuItem>
                         </DropdownMenuContent>
