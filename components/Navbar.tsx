@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <div
       className={`flex items-center justify-between md:px-[6rem] px-6 pt-10 ${
-        path == "/" ? "absolute" : "relative"
+        path == "/blog" || "/"  ? "absolute" : "relative"
       } w-full z-20`}
     >
       <div className="md:order-[-1] order-1">
