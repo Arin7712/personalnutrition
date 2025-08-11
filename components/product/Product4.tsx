@@ -24,7 +24,7 @@ const Product4 = () => {
     <div className="flex md:flex-row flex-col md:gap-0 gap-10   justify-between items-center md:pt-[6rem] md:px-[6rem] px-6">
       <div className="md:w-[30%] space-y-6">
         <h1 className={`${font.className} text-3xl font-light`}>
-          What's in your sensitivity report?
+          What's In Your<br/> Sensitivity Report?
         </h1>
         <p className="text-sm">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
@@ -33,7 +33,7 @@ const Product4 = () => {
       </div>
 
       <div>
-        <Image src="/report2.png" alt="report" width={400} height={400} />
+        <Image src="/report2.png" alt="report" width={500} height={400} />
       </div>
 
       <div className=" md:w-[30%] flex flex-col gap-6 items-start">
@@ -46,7 +46,7 @@ const Product4 = () => {
                     <div className="rounded-full bg-black p-2 text-white text-xs">
                       0{i + 1}
                     </div>
-                    <p className="text-sm uppercase text-neutral-500">{item}</p>
+                    <p className="md:text-[18px] text-sm uppercase text-neutral-500">{item}</p>
                   </div>
                 ))}
               </div>

@@ -30,18 +30,17 @@ export default function KeyBenefits2() {
   });
   return (
     <div
-      className="relative bg-[url(/singh.png)] bg-no-repeat bg-center bg-cover md:bg-contain mt-[6rem]  w-full md:min-h-screen flex md:flex-row md:pt-0 pt-[6rem] flex-col items-center justify-center bg-white"
+      className="relative bg-[url(/singh.png)] bg-no-repeat bg-center bg-cover md:bg-contain mt-[6rem]  w-full md:min-h-[110vh] flex md:flex-row md:pt-0 pt-[6rem] flex-col items-center justify-center bg-white"
     >
       {/* Center content */}
       <motion.div
         className="md:absolute text-center max-w-xl px-4 top-12 md:static"
       >
-        <h2 className="text-3xl font-light text-black">
-          Key <span className="italic text-highlight font-light">benefits</span>
+        <h2 className="md:text-[55px] text-3xl font-light text-black">
+          What goes in a<br/> <span className={`text-[#5BA228] italic font-light ${font.className}`}>90 Days Program</span>
         </h2>
         <p className="text-sm mt-2 text-gray-700">
-          Cras ac mattis libero, sit amet tristique lacus. Fusce at laoreet
-          justo. Vivamus egestas dignissim laoreet.
+          See what exactly you'll receive in your pack
         </p>
       </motion.div>
 

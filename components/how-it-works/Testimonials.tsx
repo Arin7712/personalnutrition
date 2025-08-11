@@ -25,21 +25,21 @@ const font = Noto_Serif({
 const testimonials = [
   {
     name: "Name Name",
-    date: "01-05-2025",
+    date: "01-05-25",
     product: "90 Days Gut Reset Program",
     title: "Wash your worries away",
     desc: "I have very sensitive skin and have to be super careful about what I put on my hands. I love this handwash for it's gentle formula and light, nautral scent. The bottle is also super pretty.",
   },
   {
     name: "Name Name",
-    date: "01-05-2025",
+    date: "01-05-25",
     product: "90 Days Gut Reset Program",
     title: "Wash your worries away",
     desc: "I have very sensitive skin and have to be super careful about what I put on my hands. I love this handwash for it's gentle formula and light, nautral scent. The bottle is also super pretty.",
   },
   {
     name: "Name Name",
-    date: "01-05-2025",
+    date: "01-05-25",
     product: "90 Days Gut Reset Program",
     title: "Wash your worries away",
     desc: "I have very sensitive skin and have to be super careful about what I put on my hands. I love this handwash for it's gentle formula and light, nautral scent. The bottle is also super pretty.",
@@ -74,11 +74,11 @@ const Testimonials = () => {
         custom={0}
       >
         <h1 className={`${font.className} text-3xl font-light`}>
-          100 Reviews with an average rating of 4/5
+          100 Reviews With<br/> An Average Rating Of 4/5
         </h1>
-        <p className="underline text-sm">Read all reviews</p>
-        <div className="flex gap-2">
-          {[...Array(5)].map((_, i) => (
+        <p className="underline md:text-[16px] text-sm">Read all reviews</p>
+        <div className="flex gap-1">
+          {[...Array(4)].map((_, i) => (
             <motion.div key={i} variants={fadeInUp} custom={i + 1}>
               <Image src="/star2.png" alt="star" width={20} height={20} />
             </motion.div>
@@ -130,7 +130,7 @@ const Testimonials = () => {
 
             <h1 className="text-sm">"{item.title}"</h1>
 
-            <p className="text-xs">{item.desc}</p>
+            <p className="text-[14px] leading-6">{item.desc}</p>
           </motion.div>
         ))}
       </div>

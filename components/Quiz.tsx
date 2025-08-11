@@ -15,9 +15,9 @@ const Quiz = () => {
         <div className='md:w-[50%]'>
             <Image src='/quizbg.png' alt='quiz' width={500} height={500} className='object-cover w-full h-full'/>
         </div>
-        <div className='bg-[url(/quizradient.png)] bg-cover bg-center bg-no-repeat md:w-[50%] px-[4rem] md:px-[10rem] md:h-[100vh] md:py-0 py-[6rem] flex flex-col gap-6 justify-center items-center'>
-            <h1 className={`${font.className} text-4xl text-center`}>Still not Sure If this Is this right for you?</h1>
-                      <Button className="bg-[#CAF948] rounded-full uppercase text-xs md:w-full w-fit px-10 py-4">
+        <div className='bg-[url(/quizradient.png)] bg-cover bg-center bg-no-repeat md:w-[50%] px-[4rem] md:px-[6rem] md:h-[100vh] md:py-0 py-[6rem] flex flex-col gap-6 justify-center items-center'>
+            <h1 className={`${font.className} md:text-[55px] text-3xl text-center`}>Still not Sure If this Is this right for you?</h1>
+                      <Button className="bg-[#CAF948] rounded-full uppercase text-sm w-fit w-fit px-10 py-6">
             Take the quiz now
           </Button>
         </div>

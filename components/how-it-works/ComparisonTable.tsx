@@ -81,12 +81,12 @@ const ComparisonTable = () => {
           How We Are Different?
         </div>
 
-        <div className="text-center font-extralight border-l border-gray-300 border-r border-gray-300 py-4 relative">
-          <div className="border border-lime-300 rounded-t-xl absolute -top-[1px] left-0 right-0 bottom-0 z-[-1]"></div>
-          CUSTOMI
+        <div className="text-center text-xl font-extralight border-l border-gray-300 border-r border-gray-300 py-4 relative">
+          <div className="border border-lime-300 rounded-t-xl  absolute -top-[1px] left-0 right-0 bottom-0 z-[-1]"></div>
+          <span className={`${font.className} italic`}>Personal</span><br/> Nutrition
         </div>
-        <div className="text-center font-extralight py-4 md:block hidden">
-          CUSTOMIZED
+        <div className="text-center font-extralight py-4 md:block hidden uppercase text-xl">
+          Other Brands
         </div>
 
         {/* Rows */}
@@ -100,7 +100,7 @@ const ComparisonTable = () => {
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
             >
-              <h3 className="font-extralight text-md md:text-lg">
+              <h3 className="font-extralight text-md md:text-xl">
                 {feature.title}
               </h3>
               <p className="text-gray-600 text-xs max-w-sm pt-1">
@@ -117,9 +117,9 @@ const ComparisonTable = () => {
               viewport={{ once: true, amount: 0.3 }}
             >
               {customiChecks[index] ? (
-                <Check className="w-4 h-4 stroke-[3] text-black" />
+                <Check className="size-6 stroke-[3] text-black" />
               ) : (
-                <X className="w-4 h-4 stroke-[3] text-black" />
+                <X className="size-6 stroke-[3] text-black" />
               )}
             </motion.div>
 
@@ -132,9 +132,9 @@ const ComparisonTable = () => {
               viewport={{ once: true, amount: 0.3 }}
             >
               {customizedChecks[index] ? (
-                <Check className="w-4 h-4 stroke-[3] text-black" />
+                <Check className="size-6 stroke-[3] text-black" />
               ) : (
-                <X className="w-4 h-4 stroke-[3] text-black" />
+                <X className="size-6 stroke-[3] text-black" />
               )}
             </motion.div>
           </React.Fragment>

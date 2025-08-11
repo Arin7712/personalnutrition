@@ -38,9 +38,9 @@ export default function Home() {
           className="object-contain"
         />
         <h1
-          className={`absolute flex flex-col item-center justify-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:text-4xl md:max-w-md text-3xl z-1 leading-16 ${font.className}`}
+          className={`absolute flex flex-col item-center justify-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:text-[2.6rem] md:max-w-md text-3xl z-1 leading-16 ${font.className}`}
         >
-          100 Reviews With An Average Rating Of 4/5 ✨
+          100 Reviews With An Average Rating Of 4/5 ⭐
         </h1>
       </div>
       <About/>

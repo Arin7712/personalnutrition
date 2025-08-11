@@ -10,7 +10,7 @@ const font = Noto_Serif({
 
 const CTA = () => {
   return (
-    <div className="flex flex-col gap-4 bg-[url(/aboutellipse.png)] bg-no-repeat bg-center items-center justify-center w-full h-[100vh] md:px-[6rem] px-6 mt-6  md:mt-[6rem]">
+    <div className="flex flex-col gap-4 bg-[url(/aboutellipse.png)] bg-no-repeat bg-center items-center justify-center w-full h-[100vh] md:px-[6rem] px-6 mt-6  md:mt-[1.5rem]">
       <h1 className={`${font.className} text-3xl font-light`}>
         Join Our Community
       </h1>

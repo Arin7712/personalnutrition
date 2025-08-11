@@ -16,8 +16,8 @@ import Product1 from '@/components/product/Product1'
 import Product2 from '@/components/product/Product2'
 import Product3 from '@/components/product/Product3'
 import Product4 from '@/components/product/Product4'
+import Testimonials4 from '@/components/product/Testimonials4'
 import Quiz from '@/components/Quiz'
-import Testimonials2 from '@/components/Testimonials2'
 import Testimonials3 from '@/components/Testimonials3'
 import React from 'react'
 
@@ -37,18 +37,18 @@ const barData = [
 const page = () => {
   return (
     <div>
-        <Hero/>
-        <Product2/>
-        <Product3/>
-        <Product4/>
-        <Product1/>
-        <Testimonials/>
+      <Hero/>
+      <Product2/>
+      <Product3/>
+      <Product4/>
+      <Product1/>
+      <Testimonials/>
       <About/>
       <Stats/>
       <KeyBenefits2/>
       <Feature/>
       <BarGraph data={barData}/>
-      <Testimonials3/>
+      <Testimonials4/>
       <Quiz/>
       <Science/>
       <ComparisonTable/>

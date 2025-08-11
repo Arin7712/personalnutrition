@@ -23,8 +23,8 @@ export default function KeyBenefits() {
     <div className="relative w-full md:min-h-screen flex md:flex-row md:pt-0 pt-[6rem] flex-col items-center justify-center bg-white">
       {/* Center content */}
       <div className="md:absolute text-center max-w-xl px-4 top-12 md:static">
-        <h2 className="text-3xl font-light text-black">
-          Key <span className="italic text-highlight font-light">benefits</span>
+        <h2 className="text-3xl md:text-[55px] font-light text-black">
+          Key <span className="not-italic text-highlight font-light">benefits</span>
         </h2>
         <p className="text-sm mt-2 text-gray-700">
           Cras ac mattis libero, sit amet tristique lacus. Fusce at laoreet justo. Vivamus egestas dignissim laoreet.
@@ -61,7 +61,7 @@ export default function KeyBenefits() {
 
       {/* CTA Button */}
       <div className="md:absolute bottom-8 w-full flex justify-center px-4 md:pt-0 pt-10">
-        <button className="bg-gradient-to-r from-lime-300 to-green-400 hover:from-lime-400 hover:to-green-500 px-6 py-2 rounded-full text-sm font-medium">
+        <button className="bg-gradient-to-r from-lime-300 to-green-400 hover:from-lime-400 hover:to-green-500 md:px-[2rem] px-6 py-4 rounded-full text-sm font-medium">
           BUY YOUR REPORT NOW
         </button>
       </div>

@@ -7,7 +7,7 @@ import Navbar from "@/components/Navbar";
 
 const font = Open_Sans({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "700", "300"],
   display: "swap",
 });
 

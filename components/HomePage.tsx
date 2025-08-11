@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <div className="md:relative md:h-screen">
       {/* Background image for desktop */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-[url('/homebg.png')] bg-cover bg-[center_top_-150px] z-0 md:block hidden" />
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-[url('/homebg.png')] bg-cover  z-0 md:block hidden" />
       
       {/* Main content */}
       <div className="relative md:z-10">

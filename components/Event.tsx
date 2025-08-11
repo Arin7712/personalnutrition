@@ -29,7 +29,7 @@ const Event = () => {
   return (
     <div className="flex flex-col gap-6 items-center justify-center w-full pt-[6rem] md:px-[6rem] px-6">
       <motion.h1
-        className={`md:w-[50%] md:text-5xl text-4xl text-center ${font.className}`}
+        className={`md:w-[50%] md:text-5xl font-light text-4xl text-center ${font.className}`}
         variants={fadeInUp(0)}
         initial="hidden"
         whileInView="visible"
@@ -55,7 +55,7 @@ const Event = () => {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <Button className="rounded-full hover:bg-[#022425] hover:text-[#ffffff] uppercase text-xs bg-white border-[1px] px-10 md:py-2 py-4 md:px-6 border-black">
+        <Button className="rounded-full hover:bg-[#022425] hover:text-[#ffffff] uppercase md:text-[16px] text-sm bg-white border-[1px] px-10 md:py-2 py-4 md:px-[6rem] border-black">
           See more
         </Button>
       </motion.div>

@@ -52,15 +52,15 @@ const Testimonials3 = () => {
       <div className="flex flex-col md:flex-row justify-center">
         <div className="flex flex-col md:gap-[4rem] gap-10 md:w-[70%]">
           <motion.div {...fadeIn(isInView, 0)}>
-            <h1 className={`md:text-5xl font-light text-3xl ${font.className}`}>
+            <h1 className={`md:text-[55px] font-light text-3xl ${font.className}`}>
               Sun Seekers
             </h1>
-            <p className="text-sm text-zinc-600">
+            <p className="text-sm md:text-[16px] text-zinc-600">
               The world’s top performers PersonalNutrtion.com
             </p>
           </motion.div>
 
-          <motion.div className="flex flex-wrap md:gap-10 gap-4 items-center text-sm" {...fadeIn(isInView, 0.2)}>
+          <motion.div className="flex flex-wrap md:gap-6 gap-4 items-center text-sm font-light md:text-[16px]" {...fadeIn(isInView, 0.2)}>
             {Object.keys(testimonials).map((name) => (
               <button
                 key={name}

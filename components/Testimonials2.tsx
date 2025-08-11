@@ -68,7 +68,7 @@ const Testimonials2 = () => {
                   <Image src={item.image} alt="video" width={300} height={400} />
                 </div>
                 <div className="flex flex-col justify-between md:w-[50%] md:gap-0 gap-6">
-                  <h1 className={`md:text-3xl text-2xl ${font.className}`}>
+                  <h1 className={`md:text-[30px] text-2xl ${font.className}`}>
                     {item.title}
                   </h1>
                   <p className="text-sm md:pb-[6rem] leading-relaxed">

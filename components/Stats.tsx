@@ -21,19 +21,19 @@ const Stats = () => {
 
   return (
     <div className="flex flex-col md:gap-[6rem] gap-[2rem] items-center justify-center text-center w-full md:px-0 px-6">
-      <h1 data-aos="fade-up" className={`md:w-[50%] md:text-5xl text-3xl  text-center ${font.className}`}>
+      <h1 data-aos="fade-up" className={`md:w-[50%] md:text-[55px] text-3xl  text-center ${font.className}`}>
         Researched. Studied.
-        <br /> <span className="text-highlight">Continuously Improved</span>
+        <br /> <span className="text-highlight font-medium">Continuously Improved</span>
       </h1>
 
       <div className="grid md:grid-cols-4 grid-cols-2 place-items-start gap-4 md:gap-30">
         {
             stats.map((stat, index) => (
                 <div key={index} className="flex flex-col items-center gap-6">
-                    <div className={`rounded-lg p-10 bg-[#BED9F336] flex justify-center items-center text-center text-5xl size-[10rem] ${font.className}`}>
+                    <div className={`rounded-lg p-10 bg-[#BED9F336] flex justify-center items-center text-center text-[2.4rem] size-[10rem] ${font.className}`}>
                         <NumberTicker value={stat.value}/>%
                     </div>
-                    <p className="md:w-[12rem] w-[10rem] font-light md:text-2xl text-sm text-[#022425]">{stat.name}</p>
+                    <p className="md:w-[12rem] w-[10rem] font-extralight md:text-2xl text-sm text-[#022425]">{stat.name}</p>
                 </div>
             ))
         }

@@ -123,13 +123,13 @@ export function FeatureSteps({
                   </div>
                   <motion.div
                     className={cn(
-                      "w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center border-2",
+                      "w-8 h-8 md:w-12 md:h-12 rounded-full flex items-center justify-center border-2",
                       index === currentFeature
                         ? "bg-primary border-primary text-primary-foreground scale-110"
                         : "bg-muted border-muted-foreground"
                     )}
                   >
-                    <span className="text-lg">{index + 1}</span>
+                    <span className="md:text-xl text-lg">{index + 1}</span>
                   </motion.div>
                 </motion.div>
               ))}

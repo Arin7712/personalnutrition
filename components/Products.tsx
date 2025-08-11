@@ -51,7 +51,7 @@ const Products = () => {
 
       <div className="flex flex-col md:flex-row justify-center md:justify-between md:items-start items-center gap-10 w-full">
         <div className="space-y-6 md:w-[30%] flex flex-col">
-          <h1 className={`md:text-4xl text-3xl ${font.className}`}>
+          <h1 className={`md:text-[55px] font-light text-3xl ${font.className}`}>
             Our Product
             <br /> Range
           </h1>
@@ -60,7 +60,7 @@ const Products = () => {
             are here to empower you with tools that will heal, nourish, restore,
             balance, energize, and rejuvenate you. 
           </p>
-          <Button className="bg-[#CAF948] py-4 rounded-full uppercase text-xs md:w-full w-fit px-10 hover:text-[#ffffff] hover:bg-[#5DC27A]">
+          <Button className="bg-[#CAF948] py-6 rounded-full uppercase text-[16px] md:w-[80%] w-fit px-10 hover:text-[#ffffff] hover:bg-[#5DC27A]">
             See all
           </Button>
         </div>
@@ -83,7 +83,7 @@ const Products = () => {
                                   alt={`carousel-image-${i}`}
                                   width={1000}
                                   height={600}
-                                  className="rounded-md object-cover w-full"
+                                  className="rounded-md object-cover w-full hover:scale-[1.2] transition-all duration-300"
                                 />
                               </CarouselItem>
                             ))}
@@ -92,9 +92,10 @@ const Products = () => {
                           <CarouselNext className="right-[-30] z-10 bg-none" />
                         </Carousel>
                       </div>
-
+                        <div className="space-y-2">
                       <h1 className="md:text-lg">{item.name}</h1>
                       <p className="text-xs">INR.{item.price}</p>
+                        </div>
                       <Button className="gradient-green-1 text-xs rounded-full px-10 py-6 hover:cursor-pointer uppercase md:w-auto w-full">
                         Add to cart
                       </Button>

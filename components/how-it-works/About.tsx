@@ -26,10 +26,10 @@ export const About = () => {
       className="pt-[6rem] flex flex-col gap-6 items-center justify-center text-center md:px-0 px-6"
     >
       <motion.h1
-        className={`md:text-4xl text-3xl md:max-w-lg font-light ${font.className}`}
+        className={`md:text-4xl text-3xl md:max-w-xl font-light ${font.className}`}
         {...fadeIn(0)}
       >
-        Personalised nutrition through tongue and agni analysis
+        Personalised Nutrition Through Tongue And Agni Analysis
       </motion.h1>
 
       <motion.p
@@ -44,7 +44,7 @@ export const About = () => {
         {...fadeIn(0.4)}
       >
         <motion.div className="md:w-[50%]" {...fadeIn(0.5)}>
-          <Image src="/tongue.png" alt="tongue" width={400} height={400} />
+          <Image src="/tongue.png" alt="tongue" width={500} height={400} />
         </motion.div>
 
         <motion.div
@@ -70,8 +70,7 @@ export const About = () => {
         className="text-sm md:w-[40%] pt-6"
         {...fadeIn(1.2)}
       >
-        Your tongue reflects your gut health. Using tongue analysis, we assess your digestion, inflammation, and nutrient absorption...
-      </motion.p>
+Your tongue reflects your gut health. Using tongue analysis, we assess your digestion, inflammation, and nutrient absorption to detect imbalances early and predict future issues. We examine your tongue’s colour, texture, and coating which allows us to identify toxins in the body. This preventive and curative approach helps us tailor your nutrition to improve gut health and support long-term wellness.      </motion.p>
     </div>
   );
 };

@@ -40,12 +40,12 @@ const Expert = () => {
         <div className="flex flex-col md:flex-row md:py-[6rem] py-[2rem]">
           <div className="flex flex-col md:gap-[4rem] gap-6 md:w-[50%]">
             <div className="space-y-4">
-              <h1 className={`md:text-4xl text-3xl ${font.className}`}>
+              <h1 className={`md:text-[55px] text-3xl ${font.className}`}>
                 As Science Evolves So Does Our Approach To Nutrition
               </h1>
             </div>
-            <div className="space-y-8">
-              <p className="md:text-md md:w-[70%] text-sm leading-loose">
+            <div className="space-y-6">
+              <p className="md:text-[16px] text-sm md:w-[70%] leading-8">
                 Just like fingerprints, our nutrition requirements are unique.
                 They are a sum total of our metabolic rate, gut health, stress
                 levels, lifestyle, immune system, age, gender, body

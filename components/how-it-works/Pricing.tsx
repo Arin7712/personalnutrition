@@ -37,7 +37,7 @@ const fadeInUp = {
 const Pricing = () => {
   return (
     <div className="flex flex-col items-center gap-[6rem]">
-      <div className="flex md:flex-row flex-col gap-[6rem] md:justify-center w-full md:px-[6rem] px-6 pt-[6rem]">
+      <div className="flex md:flex-row flex-col gap-[3rem] md:justify-center w-full md:px-[6rem] px-6 pt-[6rem]">
         {[1, 2].map((_, boxIndex) => (
           <motion.div
             key={boxIndex}

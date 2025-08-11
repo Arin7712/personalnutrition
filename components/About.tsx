@@ -35,10 +35,10 @@ const About = () => {
       <p className="text-sm uppercase">understanding of nutrition</p>
       <h1
         data-aos="fade-up"
-        className={`md:w-[50%] md:text-5xl text-4xl  text-center ${font.className}`}
+        className={`md:w-[50%] md:text-5xl text-4xl font-light text-center ${font.className}`}
       >
         Your gut is ruling
-        <br /> <span className="text-highlight">your world</span>
+        <br /> <span className="text-highlight ">your world</span>
       </h1>
       <p
         data-aos="fade-up"
@@ -58,7 +58,7 @@ const About = () => {
         <motion.img
           src="/goals.png"
           alt="goals"
-          width={800}
+          width={1000}
           height={300}
           style={{ rotate }}
           className="mx-auto"
@@ -72,7 +72,7 @@ const About = () => {
         <p
           data-aos="fade-up"
           data-aos-delay="200"
-          className="text-sm md:w-[50%] leading-relaxed"
+          className="text-md md:w-[50%] leading-relaxed"
         >
           PersonalNutrition.com has developed an expertise in early risk
           prediction by analyzing the tongue. Our knowledge of Vedic wisdom
@@ -84,7 +84,7 @@ const About = () => {
           <div className="md:w-[50%]">
             <Image src="/tongue.png" alt="tongue" width={400} height={400} />
           </div>
-          <div className="flex flex-col gap-6 md:w-[50%] text-start text-sm leading-relaxed">
+          <div className="flex flex-col gap-6 md:w-[50%] text-start text-md font-light leading-relaxed">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
               efficitur arcu leo, at consectetur nunc consectetur ac. Duis ut
@@ -111,7 +111,7 @@ const About = () => {
         <p
           data-aos="fade-up"
           data-aos-delay="200"
-          className="text-sm md:w-[40%] pt-6"
+          className="md:text-md md:w-[50%] pt-6"
         >
           You will be surprised how much the tongue gives away about your
           health. Its colour, texture, shape, size, markings, and coatings – all

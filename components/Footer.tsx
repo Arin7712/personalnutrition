@@ -8,8 +8,8 @@ const Footer = () => {
         <div className='flex justify-center text-center w-full'>
         <Image src="/logo.png" alt="logo" width={140} height={200} />
         </div>
-        <div className='flex md:flex-row flex-col py-[4rem] md:justify-between md:gap-0 gap-10 md:items-center md:w-[60%]'>
-        <div className='flex flex-col gap-4 uppercase text-xs md:text-sm'>
+        <div className='flex md:flex-row flex-col py-[4rem] md:justify-between md:gap-0 gap-10 md:items-center md:w-[55%]'>
+        <div className='flex flex-col gap-4 uppercase text-xs md:text-sm md:pl-6'>
             <p>About</p>
             <p>Product</p>
             <p>Our report</p>
