@@ -65,7 +65,7 @@ const Testimonials4 = () => {
               <button
                 key={name}
                 onClick={() => setSelected(name as keyof typeof testimonials)}
-                className={`px-3 py-1 transition ${selected === name ? "underline" : ""}`}
+                className={`px-3 py-1 transition ${selected === name ? "underline font-normal" : ""}`}
               >
                 {name}
               </button>
@@ -92,7 +92,7 @@ const Testimonials4 = () => {
               key={selected + "_role"}
               {...fadeIn(isInView, 0.5)}
             >
-              <p className="w-[60%] text-zinc-600 md:text-md text-sm">
+              <p className="w-[60%] text-zinc-600 md:text-[21px] text-sm">
                 {testimonials[selected].role}
               </p>
             </motion.div>

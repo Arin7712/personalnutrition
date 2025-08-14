@@ -40,11 +40,11 @@ export const About = () => {
       </motion.p>
 
       <motion.div
-        className="flex md:flex-row flex-col md:items-start items-center md:justify-between justify-center md:w-[50%] pt-[6rem] gap-6"
+        className="flex md:flex-row flex-col md:items-start items-center md:justify-between justify-center md:w-[60%] pt-[6rem] gap-6"
         {...fadeIn(0.4)}
       >
         <motion.div className="md:w-[50%]" {...fadeIn(0.5)}>
-          <Image src="/tongue.png" alt="tongue" width={500} height={400} />
+          <Image src="/tongue2.png" alt="tongue" width={600} height={400} />
         </motion.div>
 
         <motion.div
@@ -67,7 +67,7 @@ export const About = () => {
       </motion.div>
 
       <motion.p
-        className="text-sm md:w-[40%] pt-6"
+        className="md:text-[16px] text-sm md:w-[40%] pt-6"
         {...fadeIn(1.2)}
       >
 Your tongue reflects your gut health. Using tongue analysis, we assess your digestion, inflammation, and nutrient absorption to detect imbalances early and predict future issues. We examine your tongue’s colour, texture, and coating which allows us to identify toxins in the body. This preventive and curative approach helps us tailor your nutrition to improve gut health and support long-term wellness.      </motion.p>

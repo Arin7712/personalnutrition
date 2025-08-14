@@ -9,10 +9,10 @@ const font = Noto_Serif({
 
 const Hero = () => {
   return (
-    <div className="flex flex-col gap-6 md:gap-[3rem] items-center  text-center pt-[10rem] md:pt-[6rem] md:px-[6rem] px-6">
+    <div className="flex flex-col gap-6 md:gap-[3rem] items-center  text-center pt-[10rem] md:pt-[10rem] md:px-[6rem] px-6">
       <div className="space-y-6 max-w-3xl flex flex-col items-center">
         <h1
-          className={`${font.className} md:text-4xl text-3xl font-light`}
+          className={`${font.className} md:text-[55px] text-3xl font-light`}
         >
           Sensitivity Report + Montly Subscribtion
         </h1>

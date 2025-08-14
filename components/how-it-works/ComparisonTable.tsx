@@ -4,6 +4,7 @@ import React from 'react';
 import { Check, X } from 'lucide-react';
 import { Noto_Serif } from 'next/font/google';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const font = Noto_Serif({
   subsets: ['latin'],
@@ -23,11 +24,11 @@ const font = Noto_Serif({
 
 const features = [
   {
-    title: 'TAILORED DIET',
+    title: 'DIET PREFERENCES',
     desc: 'We tailor your diet according to your needs and preferences.',
   },
   {
-    title: 'ACCELERATE HEALTH',
+    title: 'HEALTH GOALS',
     desc: 'We tailor our plan to your health goals and needs so that you are able to achieve your goals faster',
   },
   {
@@ -35,7 +36,7 @@ const features = [
     desc: 'Each of us have a unique inherent composition and make up.',
   },
   {
-    title: 'INDIGENOUS RECOMMENDATIONS',
+    title: 'SEASON & ORIGIN',
     desc: 'Food that are seasonal and locally available',
   },
   {
@@ -81,9 +82,9 @@ const ComparisonTable = () => {
           How We Are Different?
         </div>
 
-        <div className="text-center text-xl font-extralight border-l border-gray-300 border-r border-gray-300 py-4 relative">
+        <div className="text-center flex items-center justify-center text-xl font-extralight border-l border-gray-300 border-r border-gray-300 py-4 relative">
           <div className="border border-lime-300 rounded-t-xl  absolute -top-[1px] left-0 right-0 bottom-0 z-[-1]"></div>
-          <span className={`${font.className} italic`}>Personal</span><br/> Nutrition
+          <Image src='/logo.png' alt='logo' width={100} height={100} />
         </div>
         <div className="text-center font-extralight py-4 md:block hidden uppercase text-xl">
           Other Brands
@@ -100,10 +101,10 @@ const ComparisonTable = () => {
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
             >
-              <h3 className="font-extralight text-md md:text-xl">
+              <h3 className="font-extralight text-md md:text-[21px]">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 text-xs max-w-sm pt-1">
+              <p className="text-gray-600 md:text-[16px] text-xs max-w-sm pt-1">
                 {feature.desc}
               </p>
             </motion.div>

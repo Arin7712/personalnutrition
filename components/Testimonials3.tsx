@@ -51,11 +51,11 @@ const Testimonials3 = () => {
     <div ref={ref} className="flex flex-col md:px-[6rem] px-6 pt-[6rem]">
       <div className="flex flex-col md:flex-row justify-center">
         <div className="flex flex-col md:gap-[4rem] gap-10 md:w-[70%]">
-          <motion.div {...fadeIn(isInView, 0)}>
+          <motion.div {...fadeIn(isInView, 0)} className="space-y-2">
             <h1 className={`md:text-[55px] font-light text-3xl ${font.className}`}>
               Sun Seekers
             </h1>
-            <p className="text-sm md:text-[16px] text-zinc-600">
+            <p className="text-sm md:text-[21px] text-zinc-600">
               The world’s top performers PersonalNutrtion.com
             </p>
           </motion.div>
@@ -65,7 +65,7 @@ const Testimonials3 = () => {
               <button
                 key={name}
                 onClick={() => setSelected(name as keyof typeof testimonials)}
-                className={`px-3 py-1 transition ${selected === name ? "underline" : ""}`}
+                className={`px-3 py-1 transition ${selected === name ? "underline font-normal" : ""}`}
               >
                 {name}
               </button>
@@ -92,7 +92,7 @@ const Testimonials3 = () => {
               key={selected + "_role"}
               {...fadeIn(isInView, 0.5)}
             >
-              <p className="w-[60%] text-zinc-600 md:text-md text-sm">
+              <p className="w-[60%] text-zinc-600 md:text-[21px] text-sm">
                 {testimonials[selected].role}
               </p>
             </motion.div>

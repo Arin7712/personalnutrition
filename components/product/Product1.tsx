@@ -23,9 +23,9 @@ const Product1 = () => {
           className="object-cover w-full h-full"
         />
       </div>
-      <div className="bg-[url(/workellipse.png)] bg-cover bg-center bg-no-repeat md:w-[50%] px-[4rem] md:px-[6rem] md:h-[100vh] md:py-0 py-[6rem] flex flex-col gap-6 justify-center items-center">
+      <div className="bg-[url(/workellipse.png)] bg-cover bg-center bg-no-repeat md:w-[50%] px-[4rem] md:px-[2rem] md:h-[100vh] md:py-0 py-[6rem] flex flex-col gap-6 justify-center items-center">
         <h1 className={`${font.className} md:text-[55px] text-3xl text-center font-light`}>
-          Get Your <span className="text-highlight">90 Days Program</span>
+          Get Your <span className="text-highlight">90 Days<br/> Program</span>
         </h1>
         <p className="text-sm">Choose Your Option:</p>
         <div className="space-y-6">
@@ -58,7 +58,7 @@ const Product1 = () => {
                 </div>
             </div>
         </div>
-        <Button className="gradient-green-1 text-xs rounded-full md:px-[6rem] px-6 py-4 hover:cursor-pointer uppercase md:w-auto w-full">
+        <Button className="gradient-green-1 text-xs rounded-full md:px-[8rem] px-6 py-5 hover:cursor-pointer uppercase md:w-auto w-full">
           {" "}
           Next
         </Button>

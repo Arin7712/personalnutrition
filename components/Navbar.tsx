@@ -38,7 +38,7 @@ const Navbar = () => {
         <Image src="/logo.png" alt="logo" width={100} height={100} />
       </div>
       <div className="md:block hidden">
-        <ul className="flex gap-[3rem] items-center">
+        <ul className="flex gap-[3rem] items-center pl-8">
           {navItems.map((item, index) => (
             <li key={index} className="hover:cursor-pointer">
               {item.name === "Products" ? (
@@ -58,7 +58,8 @@ const Navbar = () => {
                   </DropdownMenuContent>
                 </DropdownMenu>
               ) : (
-                <a href={item.href} className="text-md">
+                
+                <a href={item.href} className={`text-md ${item.name === 'About' ? '' : ''}`}>
                   {item.name}
                 </a>
               )}
@@ -67,7 +68,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="md:block hidden">
-        <Button className="gradient-green-1 text-sm rounded-full px-6 hover:cursor-pointer">
+        <Button className="gradient-green-1 text-sm rounded-full px-10 py-5 hover:cursor-pointer">
           Start the Quiz
         </Button>
       </div>

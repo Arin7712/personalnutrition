@@ -24,7 +24,7 @@ const Test = () => {
   return (
     <div
       ref={ref}
-      className="md:w-[52%] bg-[url(/bullet3.png)] gap-4 bg-no-repeat bg-center w-full aspect-[1/1] flex flex-col justify-center items-center md:mx-auto md:py-0 py-[6rem]"
+      className="md:w-[52%] bg-[url(/bullet3.png)] gap-4 bg-no-repeat bg-center w-full aspect-[2/2] flex flex-col justify-center items-center md:mx-auto md:py-0 py-[6rem]"
     >
       <motion.div className="flex gap-6 items-center" {...fadeIn(isInView, 0)}>
         <div className="flex gap-2">

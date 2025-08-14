@@ -30,17 +30,13 @@ const Steps = () => {
       <div className="flex justify-between w-full">
         <div className="flex w-full justify-between">
           <div className="flex flex-col gap-6">
-            <h1 className={`md:text-4xl text-3xl ${font.className}`}>
+            <h1 className={`md:text-[30px] text-3xl ${font.className}`}>
               Here’s the systematic approach{" "}
             </h1>
           </div>
           <div className="md:flex gap-4 hidden">
-            <Button onClick={() => api?.scrollPrev()} className="bg-[#BED9F3]">
-              <Triangle className="size-3 -rotate-90 fill-white" />
-            </Button>
-            <Button onClick={() => api?.scrollNext()} className="bg-[#BED9F3]">
-              <Triangle className="size-3 rotate-90 fill-white" />
-            </Button>
+          <Button onClick={() => api?.scrollPrev()} className="bg-[#BED9F3] text-white rounded-none px-5 py-6 hover:opacity-50 hover:bg-[#BED9F3]"><Triangle className="size-3 -rotate-90 fill-white"/></Button>
+          <Button onClick={() => api?.scrollNext()} className="bg-[#BED9F3] text-white rounded-none px-5 py-6 hover:opacity-50 hover:bg-[#BED9F3]"><Triangle className="size-3 rotate-90 fill-white"/></Button>
           </div>
         </div>
       </div>
@@ -63,7 +59,7 @@ const Steps = () => {
                         height={600}
                       />
                     </div>
-                    <h1 className={ `md:text-2xl text-lg ${font.className}`}>{item.title}</h1>
+                    <h1 className={ `md:text-[30px] text-lg leading-tight ${font.className}`}>{item.title}</h1>
                     <p className="text-sm">{item.description}</p>
                   </div>
                 </div>

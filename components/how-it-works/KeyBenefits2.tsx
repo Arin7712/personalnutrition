@@ -17,6 +17,7 @@ const font = Noto_Serif({
   subsets: ["latin"],
   weight: ["100", "200", "300"],
   display: "swap",
+  style: "italic",
 });
 
 export default function KeyBenefits2() {
@@ -37,7 +38,7 @@ export default function KeyBenefits2() {
         className="md:absolute text-center max-w-xl px-4 top-12 md:static"
       >
         <h2 className="md:text-[55px] text-3xl font-light text-black">
-          What goes in a<br/> <span className={`text-[#5BA228] italic font-light ${font.className}`}>90 Days Program</span>
+          What goes in a<br/> <span className={`text-[#5BA228] italic font-light`}><span className={font.className}>90 Days Program</span></span>
         </h2>
         <p className="text-sm mt-2 text-gray-700">
           See what exactly you'll receive in your pack
@@ -57,9 +58,9 @@ export default function KeyBenefits2() {
             }}
           >
             <div
-              className={`px-8 py-2 min-w-xs text-center text-sm rounded-full ${
+              className={`px-8 py-4 min-w-xs text-center text-sm font-light rounded-full ${
                 point.text == "Example of the report"
-                  ? "bg-lime-300"
+                  ? "bg-[#CAF948]"
                   : "bg-neutral-200/30"
               }`}
             >

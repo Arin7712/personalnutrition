@@ -21,9 +21,9 @@ const Product3 = () => {
       </div>
 
       <div className=' md:w-[30%] flex flex-col gap-6 items-start'>
-                <h1 className={`${font.className} text-3xl font-light`}>Personalised Sensitivity Report</h1>
-                <p className='text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend venenatis est, eu blandit augue ultricies in. Ut quis </p>
-        <Button className='gradient-green-1 text-xs rounded-full px-10 py-6 hover:cursor-pointer uppercase md:w-full w-fit'>Buy now</Button>
+                <h1 className={`${font.className} md:text-[30px] text-3xl font-light`}>Personalised Sensitivity<br/> Report</h1>
+                <p className='md:text-md text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend venenatis est, eu blandit augue ultricies in. Ut quis </p>
+        <Button className='gradient-green-1 text-xs rounded-full px-10 py-6 hover:cursor-pointer uppercase md:w-[80%] w-fit'>Buy now</Button>
 
       </div>
     </div>

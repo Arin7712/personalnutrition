@@ -25,9 +25,14 @@ const Feature = () => {
       ref={ref}
       className="flex flex-col md:gap-[6rem] gap-[2rem] items-center justify-center md:text-center w-full pt-[6rem] md:px-[6rem] px-6"
     >
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
+      <motion.h1
+        className={`md:text-4xl text-3xl md:max-w-xl font-light ${font.className}`}
+        {...fadeIn(0)}
+      >
+        Key Improvements Of One Of The Clients
+      </motion.h1>      <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
         {[
-          { title: "WEIGHT:", desc: "66.7 kg down to 61.4 kg", bg: "bullet2.png" },
+          { title: "WEIGHT:", desc: "66.7 kg down to 61.4 kg", bg: 'bullet2.png' },
           { title: "HbA1c:", desc: "7.5% to 6.1%", bg: "bullet.png" },
           { title: "Wait and hips", desc: "Substantial reductions", bg: "bullet2.png" },
           { title: "FASTING BLOOD SUGAR:", desc: "154 down to 103", bg: "bullet.png" },
@@ -36,7 +41,7 @@ const Feature = () => {
         ].map((item, index) => (
           <motion.div
             key={index}
-            className={`md:bg-[url(/${item.bg})] border md:border-none bg-no-repeat bg-center p-6 md:p-[4rem] rounded-lg bg-cover flex flex-col item-center justify-center`}
+            className={`md:bg-[url(/${item.bg})] border md:border-none bg-no-repeat bg-center p-6 md:p-[4rem] rounded-lg bg-cover flex flex-col item-center justify-center ${fadeIn(index * 0.2)}`}
             {...fadeIn(index * 0.2)}
           >
             <h1

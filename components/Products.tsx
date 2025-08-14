@@ -40,12 +40,8 @@ const Products = () => {
     <div className="flex flex-col md:gap-6 gap-6 w-full md:px-[6rem] px-6 py-[6rem]">
       <div className="flex justify-end w-full">
         <div className="md:flex gap-4 hidden">
-          <Button onClick={() => api?.scrollPrev()} className="bg-[#BED9F3] text-white rounded-none">
-            <Triangle className="size-4 -rotate-90 fill-white" />
-          </Button>
-          <Button onClick={() => api?.scrollNext()} className="bg-[#BED9F3] text-white rounded-none">
-            <Triangle className="size-4 rotate-90 fill-white" />
-          </Button>
+          <Button onClick={() => api?.scrollPrev()} className="bg-[#BED9F3] text-white rounded-none px-5 py-6 hover:opacity-50 hover:bg-[#BED9F3]"><Triangle className="size-3 -rotate-90 fill-white"/></Button>
+          <Button onClick={() => api?.scrollNext()} className="bg-[#BED9F3] text-white rounded-none px-5 py-6 hover:opacity-50 hover:bg-[#BED9F3]"><Triangle className="size-3 rotate-90 fill-white"/></Button>
         </div>
       </div>
 
@@ -73,7 +69,7 @@ const Products = () => {
                   <div className="flex md:flex-row flex-col gap-6 text-start items-center">
                     <div className="flex flex-col w-[90%] gap-2 md:gap-4">
                       {/* Inner Carousel */}
-                      <div className="relative p-10 bg-neutral-100 rounded-md">
+                      <div className={`relative p-10 bg-neutral-100 rounded-md hover:scale-[1.05] transition-all duration-300 ${index === 1 ? 'md:w-[92%]' : ''}`}>
                         <Carousel className="w-full">
                           <CarouselContent>
                             {[1, 2, 3].map((_, i) => (
@@ -83,7 +79,7 @@ const Products = () => {
                                   alt={`carousel-image-${i}`}
                                   width={1000}
                                   height={600}
-                                  className="rounded-md object-cover w-full hover:scale-[1.2] transition-all duration-300"
+                                  className="rounded-md object-cover w-full"
                                 />
                               </CarouselItem>
                             ))}

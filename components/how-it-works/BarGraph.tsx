@@ -41,7 +41,7 @@ export default function BarGraph({ data, maxValue = 200 }: BarGraphProps) {
       </div>
 
       {/* Chart Row */}
-      <div className="flex items-end md:justify-center gap-10 h-[500px] px-6 overflow-x-auto scrollbar-hide">
+      <div className="flex items-end md:justify-center gap-6 h-[500px] px-6 overflow-x-auto scrollbar-hide">
         {/* Y-Axis Line and Labels */}
         <div className="relative h-[430px] w-10 flex flex-col justify-between items-end pr-2 text-xs text-gray-500">
           {ticks.map((val, idx) => (
@@ -64,12 +64,12 @@ export default function BarGraph({ data, maxValue = 200 }: BarGraphProps) {
           return (
             <div
               key={i}
-              className="flex flex-col items-center w-24 text-center text-sm font-light"
+              className="flex flex-col items-center w-30 text-center text-sm font-light"
             >
               <div className="relative w-full h-[400px] border-r-[1px] border-neutral-800 flex items-end justify-center gap-3">
                 {/* Before Bar */}
                 <motion.div
-                  className="w-5 bg-blue-200"
+                  className="w-8 bg-blue-200"
                   initial={{ height: 0 }}
                   animate={controls}
                   variants={{
@@ -79,7 +79,7 @@ export default function BarGraph({ data, maxValue = 200 }: BarGraphProps) {
                 />
                 {/* After Bar */}
                 <motion.div
-                  className="w-5 bg-lime-400"
+                  className="w-8 bg-[#CAF948]"
                   initial={{ height: 0 }}
                   animate={controls}
                   variants={{
@@ -88,7 +88,7 @@ export default function BarGraph({ data, maxValue = 200 }: BarGraphProps) {
                   transition={{ duration: 0.7, delay: i * 0.1 + 0.05 }}
                 />
               </div>
-              <div className="mt-3 whitespace-pre-line text-xs">{item.label}</div>
+              <div className="mt-3 whitespace-pre-line text-sm">{item.label}</div>
             </div>
           );
         })}

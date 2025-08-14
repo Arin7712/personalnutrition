@@ -53,7 +53,7 @@ const Testimonials = () => {
       <div className="flex flex-col md:flex-row justify-center">
         <div className="flex flex-col md:gap-[4rem] gap-10 md:w-[70%]">
           <motion.div className="space-y-4" {...fadeIn(isInView, 0)}>
-            <h1 className={`md:text-5xl text-3xl font-light ${font.className}`}>
+            <h1 className={`md:text-[55px] text-3xl font-light ${font.className}`}>
               Celebrities Testimonials
             </h1>
             <p className="text-sm text-zinc-600">
@@ -69,7 +69,7 @@ const Testimonials = () => {
               <button
                 key={name}
                 onClick={() => setSelected(name as keyof typeof testimonials)}
-                className={`px-3 py-1 transition ${selected === name ? "underline" : ""}`}
+                className={`px-3 py-1 transition ${selected === name ? "underline font-normal" : ""}`}
               >
                 {name}
               </button>
@@ -90,7 +90,7 @@ const Testimonials = () => {
           </motion.div>
 
           <motion.div {...fadeIn(isInView, 0.8)}>
-            <p className="w-[60%] text-zinc-600 md:text-md text-sm">
+            <p className="w-[60%] text-zinc-600 md:text-lg text-sm">
               {testimonials[selected].role}
             </p>
           </motion.div>

@@ -9,7 +9,7 @@ const font = Noto_Serif({
 
 const Hero = () => {
   return (
-    <div className="flex flex-col gap-6 md:gap-[3rem] items-center  text-center pt-[10rem] md:pt-[6rem] md:px-[6rem] px-6">
+    <div className="flex flex-col gap-6 md:gap-[3rem] items-center  text-center pt-[10rem] md:pt-[10rem] md:px-[6rem] px-6">
       <div className="space-y-6 max-w-6xl flex flex-col items-center">
         <h1
           className={`${font.className} md:text-[55px] text-3xl font-light`}

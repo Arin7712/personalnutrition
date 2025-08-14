@@ -102,7 +102,7 @@ export function FeatureSteps({
           </div>
 
           {/* Text and Step Selection */}
-          <div className="w-full h-[110vh] bg-[url('/ellipse2.png')] bg-no-repeat bg-center md:bg-[length:800px_800px] bg-[length:500px_500px] flex flex-col items-center justify-between py-6 md:pr-12">
+          <div className="w-full h-[110vh] bg-[url('/ellipse2.png')] bg-no-repeat bg-center bg-cover md:bg-[length:800px_800px] bg-[length:500px_500px] flex flex-col items-center justify-between py-6 md:pr-12">
             <h1 className={`md:text-4xl text-3xl ${font.className}`}>
               Our client goals
             </h1>

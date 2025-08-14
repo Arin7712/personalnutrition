@@ -16,6 +16,7 @@ const font = Noto_Serif({
   subsets: ['latin'],
   weight: ['100', '200', '300'],
   display: 'swap',
+  style: 'normal'
 });
 
 export default function KeyBenefits() {
@@ -23,8 +24,8 @@ export default function KeyBenefits() {
     <div className="relative w-full md:min-h-screen flex md:flex-row md:pt-0 pt-[6rem] flex-col items-center justify-center bg-white">
       {/* Center content */}
       <div className="md:absolute text-center max-w-xl px-4 top-12 md:static">
-        <h2 className="text-3xl md:text-[55px] font-light text-black">
-          Key <span className="not-italic text-highlight font-light">benefits</span>
+        <h2 className={`text-3xl md:text-[55px] font-light text-black ${font.className}`}>
+          Key <span className={`${font.className} font-light`}>benefits</span>
         </h2>
         <p className="text-sm mt-2 text-gray-700">
           Cras ac mattis libero, sit amet tristique lacus. Fusce at laoreet justo. Vivamus egestas dignissim laoreet.

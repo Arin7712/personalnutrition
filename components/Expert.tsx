@@ -39,10 +39,13 @@ const Expert = () => {
       <div>
         <div className="flex flex-col md:flex-row md:py-[6rem] py-[2rem]">
           <div className="flex flex-col md:gap-[4rem] gap-6 md:w-[50%]">
+            <div className="space-y-2 text-md">
+            <p>SCIENCE BEHIND IT</p>
             <div className="space-y-4">
-              <h1 className={`md:text-[55px] text-3xl ${font.className}`}>
-                As Science Evolves So Does Our Approach To Nutrition
+              <h1 className={`md:text-[30px] text-3xl ${font.className}`}>
+                As Science Evolves So Does Our<br/> Approach To Nutrition
               </h1>
+            </div>
             </div>
             <div className="space-y-6">
               <p className="md:text-[16px] text-sm md:w-[70%] leading-8">
@@ -64,14 +67,14 @@ const Expert = () => {
               </p>
             </div>
             <div>
-              <p className="w-[60%] md:text-md text-sm underline">
+              <p className="w-[60%] md:text-[21px] text-sm underline">
                 Read our public research
               </p>
             </div>
           </div>
 
-          <div className="flex md:w-[50%]  justify-center items-center md:pt-0 pt-[4rem]">
-            <Image src="/mock5.png" alt="video" width={550} height={400} />
+          <div className="flex md:w-[60%]  justify-center items-center md:pt-0 pt-[4rem]">
+            <Image src="/mock5.png" alt="video" width={600} height={400} />
           </div>
         </div>
       </div>

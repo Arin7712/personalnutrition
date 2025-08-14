@@ -3,12 +3,12 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='md:h-[90vh] bg-[url(/footer.png)] bg-cover bg-center bg-no-repeat flex flex-col justify-between py-[3.5rem] md:py-[6rem] items-center'>
+    <div className='md:h-[75vh] bg-[url(/footer.png)] bg-cover bg-center bg-no-repeat flex flex-col justify-between py-[3.5rem] md:py-[6rem] items-center'>
       <div className='flex flex-col w-[100%] md:justify-center md:items-center px-6 md:px-[4rem]'>
         <div className='flex justify-center text-center w-full'>
         <Image src="/logo.png" alt="logo" width={140} height={200} />
         </div>
-        <div className='flex md:flex-row flex-col py-[4rem] md:justify-between md:gap-0 gap-10 md:items-center md:w-[55%]'>
+        <div className='flex md:flex-row flex-col py-[4rem] md:justify-between md:gap-0 gap-10 md:items-start md:w-[55%]'>
         <div className='flex flex-col gap-4 uppercase text-xs md:text-sm md:pl-6'>
             <p>About</p>
             <p>Product</p>
