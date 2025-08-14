@@ -38,7 +38,7 @@ const Navbar = () => {
         <Image src="/logo.png" alt="logo" width={100} height={100} />
       </div>
       <div className="md:block hidden">
-        <ul className="flex gap-[3rem] items-center pl-8">
+        <ul className="flex gap-[4rem] items-center pl-[4.5rem]">
           {navItems.map((item, index) => (
             <li key={index} className="hover:cursor-pointer">
               {item.name === "Products" ? (
