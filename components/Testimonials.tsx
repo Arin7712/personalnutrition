@@ -56,7 +56,7 @@ const Testimonials = () => {
             <h1 className={`md:text-[55px] text-3xl font-light ${font.className}`}>
               Celebrities Testimonials
             </h1>
-            <p className="text-sm text-zinc-600">
+            <p className="text-sm md:text-[21px] text-zinc-600">
               The world’s top performers PersonalNutrtion.com
             </p>
           </motion.div>

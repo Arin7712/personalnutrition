@@ -3,6 +3,7 @@ import { Noto_Serif } from "next/font/google";
 import Image from "next/image";
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import bullet from "@/public/bullet.png";
 
 const font = Noto_Serif({
   subsets: ["latin"],
@@ -30,18 +31,40 @@ const Feature = () => {
         {...fadeIn(0)}
       >
         Key Improvements Of One Of The Clients
-      </motion.h1>      <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
+      </motion.h1>{" "}
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
         {[
-          { title: "WEIGHT:", desc: "66.7 kg down to 61.4 kg", bg: 'bullet2.png' },
+          {
+            title: "WEIGHT:",
+            desc: "66.7 kg down to 61.4 kg",
+            bg: "/bullet2.png",
+          },
           { title: "HbA1c:", desc: "7.5% to 6.1%", bg: "bullet.png" },
-          { title: "Wait and hips", desc: "Substantial reductions", bg: "bullet2.png" },
-          { title: "FASTING BLOOD SUGAR:", desc: "154 down to 103", bg: "bullet.png" },
-          { title: "TRIGLYCERIDES:", desc: "192 down to 150", bg: "bullet2.png" },
-          { title: "VITAMIN D:", desc: "9.98 increased to 12.98", bg: "bullet.png" },
+          {
+            title: "Wait and hips",
+            desc: "Substantial reductions",
+            bg: "/bullet2.png",
+          },
+          {
+            title: "FASTING BLOOD SUGAR:",
+            desc: "154 down to 103",
+            bg: "/bullet.png",
+          },
+          {
+            title: "TRIGLYCERIDES:",
+            desc: "192 down to 150",
+            bg: "/bullet2.png",
+          },
+          {
+            title: "VITAMIN D:",
+            desc: "9.98 increased to 12.98",
+            bg: "/bullet.png",
+          },
         ].map((item, index) => (
           <motion.div
             key={index}
-            className={`md:bg-[url(/${item.bg})] border md:border-none bg-no-repeat bg-center p-6 md:p-[4rem] rounded-lg bg-cover flex flex-col item-center justify-center ${fadeIn(index * 0.2)}`}
+            style={{ backgroundImage: `url(${item.bg})` }}
+            className={`border md:border-none bg-no-repeat bg-center p-6 md:p-[4rem] rounded-lg bg-cover flex flex-col item-center justify-center`}
             {...fadeIn(index * 0.2)}
           >
             <h1

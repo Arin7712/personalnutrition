@@ -38,9 +38,9 @@ const Expert = () => {
 
       <div>
         <div className="flex flex-col md:flex-row md:py-[6rem] py-[2rem]">
-          <div className="flex flex-col md:gap-[4rem] gap-6 md:w-[50%]">
+          <div className="flex flex-col md:gap-[4rem] gap-6 md:w-[60%]">
             <div className="space-y-2 text-md">
-            <p>SCIENCE BEHIND IT</p>
+            <p className="font-light">SCIENCE BEHIND IT</p>
             <div className="space-y-4">
               <h1 className={`md:text-[30px] text-3xl ${font.className}`}>
                 As Science Evolves So Does Our<br/> Approach To Nutrition
@@ -67,7 +67,7 @@ const Expert = () => {
               </p>
             </div>
             <div>
-              <p className="w-[60%] md:text-[21px] text-sm underline">
+              <p className="w-[60%] md:text-[21px] text-sm underline font-light">
                 Read our public research
               </p>
             </div>

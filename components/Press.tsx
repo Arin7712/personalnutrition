@@ -10,7 +10,7 @@ const font = Noto_Serif({
 
 const Press = () => {
   return (
-    <div className="flex flex-col gap-6 items-center justify-center w-full md:px-[6rem] px-6 border-t-[1px] border-b-[1px] pt-[6rem]">
+    <div className="flex flex-col gap-6 items-center justify-center w-full md:px-[6rem] px-6 border-t-[1px] border-b-[1px] pt-[4rem]">
       <h1
         data-aos="fade-up"
         className={`md:w-[50%] md:text-5xl text-4xl  text-center ${font.className}`}

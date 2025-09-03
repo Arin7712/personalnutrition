@@ -81,10 +81,10 @@ const About = () => {
         </p>
 
         <div className="flex md:flex-row flex-col md:items-start items-center md:justify-between justify-center md:w-[60%] pt-[6rem] gap-6">
-          <div className="md:w-[50%]">
+          <div className="md:w-[55%]">
             <Image src="/tongue2.png" alt="tongue" width={500} height={400} />
           </div>
-          <div className="flex flex-col gap-6 md:w-[50%] text-start text-md font-light leading-relaxed">
+          <div className="flex flex-col gap-6 md:w-[50%] text-start text-[16px] font-light leading-relaxed">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
               efficitur arcu leo, at consectetur nunc consectetur ac. Duis ut
